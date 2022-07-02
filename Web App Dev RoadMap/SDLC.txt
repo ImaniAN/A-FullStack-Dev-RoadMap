@@ -1,0 +1,30 @@
+Software Development Life Cycle:
+1. Planning.
+2. Analysis.
+3. Design.
+4. Development.
+5. Testing.
+6. Implementation.
+7. Maintenance. 
+
+Business Plan 
+1.Cover Page
+1.Legal Page
+ 
+2.Introduction
+2.Executive Summary
+
+3.Business Summary 
+3.The Service
+3.Management Summary
+3.Organisation Summary 
+
+4.Marketing Summary
+4.Market Research
+4.Selling and Marketing 
+
+5.Financial Plan
+5.Cashflow Projections
+
+6.References
+6.Tables and data 
