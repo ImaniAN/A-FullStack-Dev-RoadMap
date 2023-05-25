@@ -1,0 +1,928 @@
+
+<details><summary>Web App Developer</summary></details>
+<details><summary>Literacy </summary></details>
+<details><summary>English</summary></details>
+<details><summary>Additional Language </summary></details>
+<details><summary>Levels</summary></details>
+<details><summary>1</summary></details>
+<details><summary>2</summary></details>
+<details><summary>3</summary></details>
+<details><summary>4</summary></details>
+<details><summary>5</summary></details>
+<details><summary>6</summary></details>
+<details><summary>7</summary></details>
+<details><summary>8</summary></details>
+<details><summary>9</summary></details>
+<details><summary>10</summary></details>
+<details><summary>11</summary></details>
+<details><summary>12</summary></details>
+<details><summary>Prac's</summary></details>
+<details><summary>Examples</summary></details>
+<details><summary>Exercises</summary></details>
+<details><summary>Projects</summary></details>
+<details><summary>Home Language</summary></details>
+<details><summary>Levels</summary></details>
+<details><summary>1</summary></details>
+<details><summary>2</summary></details>
+<details><summary>3</summary></details>
+<details><summary>4</summary></details>
+<details><summary>5</summary></details>
+<details><summary>6</summary></details>
+<details><summary>7</summary></details>
+<details><summary>8</summary></details>
+<details><summary>9</summary></details>
+<details><summary>10</summary></details>
+<details><summary>11</summary></details>
+<details><summary>12</summary></details>
+<details><summary>Prac's</summary></details>
+<details><summary>Examples</summary></details>
+<details><summary>Exercises</summary></details>
+<details><summary>Projects</summary></details>
+<details><summary>Maths</summary></details>
+<details><summary>Number Systems</summary></details>
+<details><summary>Natural Numbers</summary></details>
+<details><summary>Integers</summary></details>
+<details><summary>Irrational/ Rational Numbers</summary></details>
+<details><summary>Nonreal/Real</summary></details>
+<details><summary>Complex</summary></details>
+<details><summary>Structures 1</summary></details>
+<details><summary>Algebra</summary></details>
+<details><summary>Equations</summary></details>
+<details><summary>Linear Algebra</summary></details>
+<details><summary>Matrices</summary></details>
+<details><summary>Vectors</summary></details>
+<details><summary>Spaces</summary></details>
+<details><summary>Geometry</summary></details>
+<details><summary>Trigonometry</summary></details>
+<details><summary>Changes</summary></details>
+<details><summary>Calculus </summary></details>
+<details><summary>Differential Equations</summary></details>
+<details><summary>Vector Calculus</summary></details>
+<details><summary>Chaos Theory</summary></details>
+<details><summary>Chances</summary></details>
+<details><summary>Probability</summary></details>
+<details><summary>Statistics</summary></details>
+<details><summary>Structures 2 </summary></details>
+<details><summary>Measure Theory</summary></details>
+<details><summary>Number Theory</summary></details>
+<details><summary>Order Theory</summary></details>
+<details><summary>Category  Theory</summary></details>
+<details><summary>Group  Theory</summary></details>
+<details><summary>Partition  Theory</summary></details>
+<details><summary>Graph Theory</summary></details>
+<details><summary>[Resource](https://www.tutorialspoint.com/graph_theory/graph_theory_tutorial.pdfDiscrete Theory</summary></details>
+<details><summary>[Resource](https://www.tutorialspoint.com/discrete_mathematics/discrete_mathematics_tutorial.pdfTopology</summary></details>
+<details><summary>Differential Geometry </summary></details>
+<details><summary>Numerical Analysis</summary></details>
+<details><summary>Intro</summary></details>
+<details><summary>Computational Theory </summary></details>
+<details><summary>Intro</summary></details>
+<details><summary>OS's</summary></details>
+<details><summary>Linux</summary></details>
+<details><summary>[Resource](https://www.youtube.com/watch?v=ROjZy1WbCIA&ab_channel=freeCodeCamp.orgIntro</summary></details>
+<details><summary>Install Linux</summary></details>
+<details><summary>Desktop Environment</summary></details>
+<details><summary>Terminal</summary></details>
+<details><summary>Working with Directories</summary></details>
+<details><summary>Working with Files</summary></details>
+<details><summary>Working with File Content</summary></details>
+<details><summary>Linux File Structure</summary></details>
+<details><summary>System Information</summary></details>
+<details><summary>Networking</summary></details>
+<details><summary>Linux Package Manager</summary></details>
+<details><summary>Text Editor</summary></details>
+<details><summary>MacOS</summary></details>
+<details><summary>[Resource](https://www.makeuseof.com/tag/macos-beginners-guide/What Is MacOS?</summary></details>
+<details><summary>Intro</summary></details>
+<details><summary>Setting Up Your New Mac</summary></details>
+<details><summary>Intro</summary></details>
+<details><summary>The Basics of Using MacOS</summary></details>
+<details><summary>Desktop and Menu Bar</summary></details>
+<details><summary>The Dock</summary></details>
+<details><summary>Finder</summary></details>
+<details><summary>Spotlight</summary></details>
+<details><summary>Applications</summary></details>
+<details><summary>System Preferences</summary></details>
+<details><summary>Gestures and Navigation</summary></details>
+<details><summary>AirPlay and AirDrop</summary></details>
+<details><summary>Siri</summary></details>
+<details><summary>Understanding iCloud and MacOS</summary></details>
+<details><summary>What Is iCloud?</summary></details>
+<details><summary>Storage Space</summary></details>
+<details><summary>iCloud on Mac</summary></details>
+<details><summary>iCloud.com</summary></details>
+<details><summary>Backups and Maintenance on MacOS</summary></details>
+<details><summary>MacOS Updates</summary></details>
+<details><summary>Backing Up With Time Machine</summary></details>
+<details><summary>MacOS Maintenance</summary></details>
+<details><summary>Annual MacOS Upgrades</summary></details>
+<details><summary>Troubleshooting MacOS Issues</summary></details>
+<details><summary>Boot Modes</summary></details>
+<details><summary>RAM and SMC</summary></details>
+<details><summary>Diagnostics and Fixing Your Mac</summary></details>
+<details><summary>Windows 10</summary></details>
+<details><summary>[Resource](https://www.youtube.com/watch?v=z2r-p7xc7c4&ab_channel=SimonSezITIntroduction to Windows 10</summary></details>
+<details><summary>Acquiring Windows 10</summary></details>
+<details><summary>Getting Started with Windows 10</summary></details>
+<details><summary>Running Apps</summary></details>
+<details><summary>User Account Basics</summary></details>
+<details><summary>Help and Support</summary></details>
+<details><summary>Windows Updates</summary></details>
+<details><summary>Working in Desktop Mode</summary></details>
+<details><summary>Managing and Using the Taskbar</summary></details>
+<details><summary>The Search box and Cortana</summary></details>
+<details><summary>Notifications and Action Centre</summary></details>
+<details><summary>Using Windows and Dialogues</summary></details>
+<details><summary>The Start Menu</summary></details>
+<details><summary>Using Settings and Control Panel</summary></details>
+<details><summary>Basic Settings</summary></details>
+<details><summary>Display Settings</summary></details>
+<details><summary>Power Options</summary></details>
+<details><summary>Ease of Access</summary></details>
+<details><summary>Personalizing your Windows 10</summary></details>
+<details><summary>Managing Tiles and Apps</summary></details>
+<details><summary>OSI Model Architecture</summary></details>
+<details><summary>[Resource](https://en.wikipedia.org/wiki/OSI_modelPhysical</summary></details>
+<details><summary>Introduction</summary></details>
+<details><summary>Data Link</summary></details>
+<details><summary>Introduction</summary></details>
+<details><summary>Network</summary></details>
+<details><summary>Introduction</summary></details>
+<details><summary>Transport</summary></details>
+<details><summary>Introduction</summary></details>
+<details><summary>Session</summary></details>
+<details><summary>Introduction</summary></details>
+<details><summary>Presentation </summary></details>
+<details><summary>Introduction</summary></details>
+<details><summary>Application </summary></details>
+<details><summary>Introduction</summary></details>
+<details><summary>Dev life Setup</summary></details>
+<details><summary>Google Chrome</summary></details>
+<details><summary>Introduction</summary></details>
+<details><summary>[Resource](https://www.google.com/chrome/browser-features/#How to use</summary></details>
+<details><summary>[Resource](https://www.webnots.com/beginners-guide-to-google-chrome-browser/Installation</summary></details>
+<details><summary>[Resource](https://www.google.com/chrome/?brand=YTUH&gclid=CjwKCAjwwdWVBhA4EiwAjcYJEPRHmmouC8HUbqMuEs_5JJl-nbFOAe5aXTzw3ss3C-_D9XUNvSXG3xo[Resource](https://www.google.com/chrome/Google</summary></details>
+<details><summary>[Resource](https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUpAccount Creation</summary></details>
+<details><summary>Microsoft</summary></details>
+<details><summary>[Resource](https://signup.live.com/signup?lcid=1033&wa=wsignin1.0&rpsnv=13&ct=1656073587&rver=7.0.6738.0&wp=MBI_SSL&wreply=https%3a%2f%2faccount.microsoft.com%2fauth%2fcomplete-signin%3fru%3dhttps%253A%252F%252Faccount.microsoft.com%252F%253Frefp%253Dsignedout-in...Account Creation</summary></details>
+<details><summary>GitHub</summary></details>
+<details><summary>[Resource](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-homeAccount Creation</summary></details>
+<details><summary>Postman</summary></details>
+<details><summary>[Resource](https://learning.postman.com/docs/getting-started/introduction/VSCode</summary></details>
+<details><summary>Setup</summary></details>
+<details><summary>[Resource](https://code.visualstudio.com/docs/setup/setup-overviewGet Starteted</summary></details>
+<details><summary>[Resource](https://code.visualstudio.com/docs/getstarted/introvideos#getstarted-articlesBasic Editing</summary></details>
+<details><summary>[Resource](https://code.visualstudio.com/docs/editor/codebasicsExtension</summary></details>
+<details><summary>[Resource](https://code.visualstudio.com/learn/get-started/extensionsExtra infor</summary></details>
+<details><summary>[Resource](https://www.youtube.com/watch?v=B-s71n0dHUkVersion Control </summary></details>
+<details><summary>Introduction</summary></details>
+<details><summary>[Resource](https://betterexplained.com/articles/a-visual-guide-to-version-control/Git</summary></details>
+<details><summary>[Resource](https://git-scm.comGitHub</summary></details>
+<details><summary>[Resource](https://www.youtube.com/watch?v=RGOj5yH7evk&ab_channel=freeCodeCamp.orgOptional</summary></details>
+<details><summary>LinkedIn</summary></details>
+<details><summary>[Resource](https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUpZoom</summary></details>
+<details><summary>[Resource](https://zoom.us/signupNoob Development </summary></details>
+<details><summary>HTML</summary></details>
+<details><summary>Theory</summary></details>
+<details><summary>[Resource](https://www.w3schools.com/html/default.aspIntroduction</summary></details>
+<details><summary>Editors</summary></details>
+<details><summary>Basic</summary></details>
+<details><summary>Elements</summary></details>
+<details><summary>Attributes</summary></details>
+<details><summary>Headings</summary></details>
+<details><summary>Paragraphs</summary></details>
+<details><summary>Styles</summary></details>
+<details><summary>Formatting</summary></details>
+<details><summary>Quotations</summary></details>
+<details><summary>Comments</summary></details>
+<details><summary>Colours</summary></details>
+<details><summary>CSS</summary></details>
+<details><summary>Links</summary></details>
+<details><summary>Images</summary></details>
+<details><summary>Favicon</summary></details>
+<details><summary>Tables</summary></details>
+<details><summary>Lists</summary></details>
+<details><summary>Block & Inline</summary></details>
+<details><summary>Classes</summary></details>
+<details><summary>Id</summary></details>
+<details><summary>Iframes</summary></details>
+<details><summary>JavaScript</summary></details>
+<details><summary>File Paths</summary></details>
+<details><summary>Head</summary></details>
+<details><summary>Layout</summary></details>
+<details><summary>Responsive</summary></details>
+<details><summary>Computer code</summary></details>
+<details><summary>Semantics</summary></details>
+<details><summary>Style Guide</summary></details>
+<details><summary>Entities</summary></details>
+<details><summary>Symbols</summary></details>
+<details><summary>Emojis</summary></details>
+<details><summary>Charset</summary></details>
+<details><summary>URL Encode</summary></details>
+<details><summary>HTML vs. XHTML</summary></details>
+<details><summary>Forms</summary></details>
+<details><summary>Form Attributes</summary></details>
+<details><summary>Form Elements</summary></details>
+<details><summary>Input Types</summary></details>
+<details><summary>Input Attributes</summary></details>
+<details><summary>Input Form Attributes</summary></details>
+<details><summary>Graphics</summary></details>
+<details><summary>Canvas</summary></details>
+<details><summary>SVG</summary></details>
+<details><summary>Media</summary></details>
+<details><summary>Video</summary></details>
+<details><summary>Audio</summary></details>
+<details><summary>Plug-ins</summary></details>
+<details><summary>YouTube</summary></details>
+<details><summary>APIs</summary></details>
+<details><summary>Geolocation</summary></details>
+<details><summary>Drag/Drop</summary></details>
+<details><summary>Web Storage</summary></details>
+<details><summary>Web Workers</summary></details>
+<details><summary>SSE</summary></details>
+<details><summary>Prac's</summary></details>
+<details><summary>Examples</summary></details>
+<details><summary>Exercises</summary></details>
+<details><summary>Projects</summary></details>
+<details><summary>CSS</summary></details>
+<details><summary>Theory</summary></details>
+<details><summary>[Resource](https://www.w3schools.com/css/default.aspIntroduction</summary></details>
+<details><summary>Syntax</summary></details>
+<details><summary>Selectors</summary></details>
+<details><summary>How To</summary></details>
+<details><summary>Comments</summary></details>
+<details><summary>Colours</summary></details>
+<details><summary>Backgrounds</summary></details>
+<details><summary>Borders</summary></details>
+<details><summary>Margins</summary></details>
+<details><summary>Padding</summary></details>
+<details><summary>Height/Width</summary></details>
+<details><summary>Box Model</summary></details>
+<details><summary>Outline</summary></details>
+<details><summary>Text</summary></details>
+<details><summary>Fonts</summary></details>
+<details><summary>Icons</summary></details>
+<details><summary>Links</summary></details>
+<details><summary>Lists</summary></details>
+<details><summary>Tables</summary></details>
+<details><summary>Display</summary></details>
+<details><summary>Max-width</summary></details>
+<details><summary>Position</summary></details>
+<details><summary>Z-index</summary></details>
+<details><summary>Overflow</summary></details>
+<details><summary>Float</summary></details>
+<details><summary>Inline-block</summary></details>
+<details><summary>Align</summary></details>
+<details><summary>Combinators</summary></details>
+<details><summary>Pseudo-class</summary></details>
+<details><summary>Pseudo-element</summary></details>
+<details><summary>Opacity</summary></details>
+<details><summary>Navigation Bar</summary></details>
+<details><summary>Dropdowns</summary></details>
+<details><summary>Image Gallery</summary></details>
+<details><summary>Image Sprites</summary></details>
+<details><summary>Attr Selectors</summary></details>
+<details><summary>Forms</summary></details>
+<details><summary>Counters</summary></details>
+<details><summary>Website Layout</summary></details>
+<details><summary>Units</summary></details>
+<details><summary>Specificity</summary></details>
+<details><summary>!important</summary></details>
+<details><summary>Math Functions</summary></details>
+<details><summary>Advanced</summary></details>
+<details><summary>Rounded Corners</summary></details>
+<details><summary>Border Images</summary></details>
+<details><summary>Backgrounds</summary></details>
+<details><summary>Colours</summary></details>
+<details><summary>Colour Keywords</summary></details>
+<details><summary>Gradients</summary></details>
+<details><summary>Shadows</summary></details>
+<details><summary>Text Effects</summary></details>
+<details><summary>Web Fonts</summary></details>
+<details><summary>2D Transforms</summary></details>
+<details><summary>3D Transforms</summary></details>
+<details><summary>Transitions</summary></details>
+<details><summary>Animations</summary></details>
+<details><summary>Tooltips</summary></details>
+<details><summary>Style Images</summary></details>
+<details><summary>Image Reflection</summary></details>
+<details><summary>object-fit</summary></details>
+<details><summary>object-position</summary></details>
+<details><summary>Masking</summary></details>
+<details><summary>Buttons</summary></details>
+<details><summary>Pagination</summary></details>
+<details><summary>Multiple Columns</summary></details>
+<details><summary>User Interface</summary></details>
+<details><summary>Variables</summary></details>
+<details><summary>Box Sizing</summary></details>
+<details><summary>Media Queries</summary></details>
+<details><summary>MQ Examples</summary></details>
+<details><summary>Flexbox</summary></details>
+<details><summary>Responsive</summary></details>
+<details><summary>Intro</summary></details>
+<details><summary>Viewport</summary></details>
+<details><summary>Grid View</summary></details>
+<details><summary>Media Queries</summary></details>
+<details><summary>Images</summary></details>
+<details><summary>Videos</summary></details>
+<details><summary>Frameworks</summary></details>
+<details><summary>Templates</summary></details>
+<details><summary>Grid</summary></details>
+<details><summary>Introduction</summary></details>
+<details><summary>Container</summary></details>
+<details><summary>Item</summary></details>
+<details><summary>SASS</summary></details>
+<details><summary>Prac's</summary></details>
+<details><summary>Examples</summary></details>
+<details><summary>Exercises</summary></details>
+<details><summary>Projects</summary></details>
+<details><summary>JavaScript</summary></details>
+<details><summary>Theory</summary></details>
+<details><summary>[Resource](https://www.w3schools.com/js/default.aspIntroduction</summary></details>
+<details><summary>Where To</summary></details>
+<details><summary>Output</summary></details>
+<details><summary>Statements</summary></details>
+<details><summary>Syntax</summary></details>
+<details><summary>Comments</summary></details>
+<details><summary>Variables</summary></details>
+<details><summary>Let</summary></details>
+<details><summary>Cost</summary></details>
+<details><summary>Operators</summary></details>
+<details><summary>Arithmetic</summary></details>
+<details><summary>Assignment</summary></details>
+<details><summary>Data Types</summary></details>
+<details><summary>Functions</summary></details>
+<details><summary>Objects</summary></details>
+<details><summary>Events</summary></details>
+<details><summary>Strings</summary></details>
+<details><summary>String Methods</summary></details>
+<details><summary>String Search</summary></details>
+<details><summary>String Templates</summary></details>
+<details><summary>Numbers</summary></details>
+<details><summary>Number Methods</summary></details>
+<details><summary>Arrays</summary></details>
+<details><summary>Array Methods</summary></details>
+<details><summary>Array Sort</summary></details>
+<details><summary>Array Iteration</summary></details>
+<details><summary>Array Cost</summary></details>
+<details><summary>Dates</summary></details>
+<details><summary>Date Formats</summary></details>
+<details><summary>Date Get Methods</summary></details>
+<details><summary>Date Set Methods</summary></details>
+<details><summary>Math</summary></details>
+<details><summary>Random</summary></details>
+<details><summary>Booleans</summary></details>
+<details><summary>Comparisons</summary></details>
+<details><summary>If Else</summary></details>
+<details><summary>Switch</summary></details>
+<details><summary>Loop For</summary></details>
+<details><summary>Loop For In</summary></details>
+<details><summary>Loop For Of</summary></details>
+<details><summary>Loop While</summary></details>
+<details><summary>Break</summary></details>
+<details><summary>Timetables</summary></details>
+<details><summary>Sets</summary></details>
+<details><summary>Maps</summary></details>
+<details><summary>Type of</summary></details>
+<details><summary>Type Conversion</summary></details>
+<details><summary>Bitwise</summary></details>
+<details><summary>RegExp</summary></details>
+<details><summary>Errors</summary></details>
+<details><summary>Scope</summary></details>
+<details><summary>Hoisting</summary></details>
+<details><summary>Strict Mode</summary></details>
+<details><summary>this Keyword</summary></details>
+<details><summary>Arrow Function</summary></details>
+<details><summary>Classes</summary></details>
+<details><summary>Modules</summary></details>
+<details><summary>JSON</summary></details>
+<details><summary>Debugging</summary></details>
+<details><summary>Style Guide</summary></details>
+<details><summary>Best Practices</summary></details>
+<details><summary>Mistakes</summary></details>
+<details><summary>Performance</summary></details>
+<details><summary>Reserved Words</summary></details>
+<details><summary>Objects</summary></details>
+<details><summary>Object Definitions</summary></details>
+<details><summary>Object Properties</summary></details>
+<details><summary>Object Methods</summary></details>
+<details><summary>Object Display</summary></details>
+<details><summary>Object Accessors</summary></details>
+<details><summary>Object Constructors</summary></details>
+<details><summary>Object Prototypes</summary></details>
+<details><summary>Object Timetables</summary></details>
+<details><summary>Object Sets</summary></details>
+<details><summary>Object Maps</summary></details>
+<details><summary>Object Reference</summary></details>
+<details><summary>Classes</summary></details>
+<details><summary>Class Intro</summary></details>
+<details><summary>Class Inheritance</summary></details>
+<details><summary>Class Static</summary></details>
+<details><summary>Functions</summary></details>
+<details><summary>Function Definitions</summary></details>
+<details><summary>Function Parameters</summary></details>
+<details><summary>Function Invocation</summary></details>
+<details><summary>Function Call</summary></details>
+<details><summary>Function Apply</summary></details>
+<details><summary>Function Bind</summary></details>
+<details><summary>Function Closures</summary></details>
+<details><summary>Async</summary></details>
+<details><summary>JS Call-backs</summary></details>
+<details><summary>JS Asynchronous</summary></details>
+<details><summary>JS Promises</summary></details>
+<details><summary>JS Async/Await</summary></details>
+<details><summary>HTML DOM</summary></details>
+<details><summary>DOM Intro</summary></details>
+<details><summary>DOM Methods</summary></details>
+<details><summary>DOM Document</summary></details>
+<details><summary>DOM Elements</summary></details>
+<details><summary>DOM HTML</summary></details>
+<details><summary>DOM Forms</summary></details>
+<details><summary>DOM CSS</summary></details>
+<details><summary>DOM Animations</summary></details>
+<details><summary>DOM Events</summary></details>
+<details><summary>DOM Event Listener</summary></details>
+<details><summary>DOM Navigation</summary></details>
+<details><summary>DOM Nodes</summary></details>
+<details><summary>DOM Collections</summary></details>
+<details><summary>DOM Node Lists</summary></details>
+<details><summary>Browser BOM</summary></details>
+<details><summary>Window</summary></details>
+<details><summary>Screen</summary></details>
+<details><summary>Location</summary></details>
+<details><summary>History</summary></details>
+<details><summary>Navigator</summary></details>
+<details><summary>Popup Alert</summary></details>
+<details><summary>Timing</summary></details>
+<details><summary>Cookies</summary></details>
+<details><summary>Web APIs</summary></details>
+<details><summary>Web API Intro</summary></details>
+<details><summary>Web Forms API</summary></details>
+<details><summary>Web History API</summary></details>
+<details><summary>Web Storage API</summary></details>
+<details><summary>Web Worker API</summary></details>
+<details><summary>Web Fetch API</summary></details>
+<details><summary>Web Geolocation API</summary></details>
+<details><summary>AJAX </summary></details>
+<details><summary>Intro</summary></details>
+<details><summary>XMLHttp</summary></details>
+<details><summary>Request</summary></details>
+<details><summary>Response</summary></details>
+<details><summary>XML File</summary></details>
+<details><summary>PHP</summary></details>
+<details><summary>ASP</summary></details>
+<details><summary>Database</summary></details>
+<details><summary>Applications</summary></details>
+<details><summary>JSON</summary></details>
+<details><summary>Intro</summary></details>
+<details><summary>Syntax</summary></details>
+<details><summary>vs XML</summary></details>
+<details><summary>Data Types</summary></details>
+<details><summary>Parse</summary></details>
+<details><summary>Stringify</summary></details>
+<details><summary>Objects</summary></details>
+<details><summary>Arrays</summary></details>
+<details><summary>Server</summary></details>
+<details><summary>PHP</summary></details>
+<details><summary>HTML</summary></details>
+<details><summary>JSONP</summary></details>
+<details><summary>Prac's</summary></details>
+<details><summary>Examples</summary></details>
+<details><summary>Exercises</summary></details>
+<details><summary>Projects</summary></details>
+<details><summary>Node.JS</summary></details>
+<details><summary>W3cSchools</summary></details>
+<details><summary>[Resource](https://www.w3schools.com/nodejs/default.aspHOME</summary></details>
+<details><summary>Intro</summary></details>
+<details><summary>Get Started</summary></details>
+<details><summary>Modules</summary></details>
+<details><summary>HTTP Module</summary></details>
+<details><summary>File System</summary></details>
+<details><summary>URL Module</summary></details>
+<details><summary>NPM</summary></details>
+<details><summary>Events</summary></details>
+<details><summary>Upload Files</summary></details>
+<details><summary>Email</summary></details>
+<details><summary>.ORG</summary></details>
+<details><summary>[Resource](https://nodejs.org/en/docs/guides/Guides</summary></details>
+<details><summary>General</summary></details>
+<details><summary>Getting Started Guide</summary></details>
+<details><summary>Debugging - Getting Started</summary></details>
+<details><summary>Easy profiling for Node.js Applications</summary></details>
+<details><summary>Diagnostics - Flame Graphs</summary></details>
+<details><summary>Dockerizing a Node.js web app</summary></details>
+<details><summary>Migrating to safe Buffer constructors</summary></details>
+<details><summary>Node.js core concepts</summary></details>
+<details><summary>Introduction to Node.js</summary></details>
+<details><summary>Overview of Blocking vs Non-Blocking</summary></details>
+<details><summary>The Node.js Event Loop, Timers, and process.nextTick()</summary></details>
+<details><summary>Don't Block the Event Loop (or the Worker Pool)</summary></details>
+<details><summary>Timers in Node.js</summary></details>
+<details><summary>Module-related guides</summary></details>
+<details><summary>Anatomy of an HTTP Transaction</summary></details>
+<details><summary>Working with Different Filesystems</summary></details>
+<details><summary>Backpressuring in Streams</summary></details>
+<details><summary>Domain Module Postmortem</summary></details>
+<details><summary>How to publish N-API package</summary></details>
+<details><summary>ABI Stability</summary></details>
+<details><summary>.DEV</summary></details>
+<details><summary>[Resource](https://nodejs.dev/learnQuick Start</summary></details>
+<details><summary>Introduction to Node.js</summary></details>
+<details><summary>A brief history of Node.js</summary></details>
+<details><summary>How to install Node.js</summary></details>
+<details><summary>How much JavaScript do you need to know to use Node.js?</summary></details>
+<details><summary>Differences between Node.js and the Browser</summary></details>
+<details><summary>Getting Started</summary></details>
+<details><summary>The V8 JavaScript Engine</summary></details>
+<details><summary>Run Node.js scripts from the command line</summary></details>
+<details><summary>How to exit from a Node.js program</summary></details>
+<details><summary>How to read environment variables from Node.js</summary></details>
+<details><summary>How to use the Node.js REPL</summary></details>
+<details><summary>Node.js, accept arguments from the command line</summary></details>
+<details><summary>Output to the command line using Node.js</summary></details>
+<details><summary>Accept input from the command line in Node.js</summary></details>
+<details><summary>Expose functionality from a Node.js file using exports</summary></details>
+<details><summary>An introduction to the npm package manager</summary></details>
+<details><summary>Where does npm install the packages?</summary></details>
+<details><summary>How to use or execute a package installed using npm</summary></details>
+<details><summary>The package.json guide</summary></details>
+<details><summary>The package-lock.json file</summary></details>
+<details><summary>Find the installed version of an npm package</summary></details>
+<details><summary>Install an older version of an npm package</summary></details>
+<details><summary>Update all the Node.js dependencies to their latest version</summary></details>
+<details><summary>Semantic Versioning using npm</summary></details>
+<details><summary>Uninstalling npm packages</summary></details>
+<details><summary>npm global or local packages</summary></details>
+<details><summary>npm dependencies and devDependencies</summary></details>
+<details><summary>The npx Node.js Package Runner</summary></details>
+<details><summary>The Node.js Event Loop</summary></details>
+<details><summary>Understanding process.nextTick()</summary></details>
+<details><summary>Understanding setImmediate()</summary></details>
+<details><summary>Discover JavaScript Timers</summary></details>
+<details><summary>JavaScript Asynchronous Programming and Call-backs</summary></details>
+<details><summary>Understanding JavaScript Promises</summary></details>
+<details><summary>Modern Asynchronous JavaScript with Async and Await</summary></details>
+<details><summary>The Node.js Event emitter</summary></details>
+<details><summary>Build an HTTP Server</summary></details>
+<details><summary>Making HTTP requests with Node.js</summary></details>
+<details><summary>Get HTTP request body data using Node.js</summary></details>
+<details><summary>Working with file descriptors in Node.js</summary></details>
+<details><summary>Node.js file stats</summary></details>
+<details><summary>Node.js File Paths</summary></details>
+<details><summary>Reading files with Node.js</summary></details>
+<details><summary>Writing files with Node.js</summary></details>
+<details><summary>Working with folders in Node.js</summary></details>
+<details><summary>The Node.js fs module</summary></details>
+<details><summary>The Node.js path module</summary></details>
+<details><summary>The Node.js os module</summary></details>
+<details><summary>The Node.js events module</summary></details>
+<details><summary>The Node.js http module</summary></details>
+<details><summary>Node.js Buffers</summary></details>
+<details><summary>Node.js Streams</summary></details>
+<details><summary>Node.js, the difference between development and production</summary></details>
+<details><summary>Error handling in Node.js</summary></details>
+<details><summary>How to log an object in Node.js</summary></details>
+<details><summary>Node.js with TypeScript</summary></details>
+<details><summary>Node.js with WebAssembly</summary></details>
+<details><summary>NPM</summary></details>
+<details><summary>Intro</summary></details>
+<details><summary>[Resource](https://www.youtube.com/watch?v=P3aKRdUyr0s&ab_channel=CoderCoderWhy do we need npm?</summary></details>
+<details><summary>What is npm?</summary></details>
+<details><summary>How to install npm</summary></details>
+<details><summary>Which npm packages do you need?</summary></details>
+<details><summary>Installing global and local packages</summary></details>
+<details><summary>What does the package.json file do?</summary></details>
+<details><summary>Dealing with npm package dependencies</summary></details>
+<details><summary>How semantic versioning works in npm</summary></details>
+<details><summary>What does the package-lock.json file do?</summary></details>
+<details><summary>An absolute beginners guide to using npm</summary></details>
+<details><summary>[Resource](https://css-tricks.com/a-complete-beginners-guide-to-npm/Who is This Guide For? (You are here!)</summary></details>
+<details><summary>What Does �npm� Mean?</summary></details>
+<details><summary>What is the Command Line?</summary></details>
+<details><summary>What is Node?</summary></details>
+<details><summary>What is a Package Manager?</summary></details>
+<details><summary>How Do You Install npm?</summary></details>
+<details><summary>How Do You Install npm Packages?</summary></details>
+<details><summary>What Are npm Commands?</summary></details>
+<details><summary>How Do You Install an Existing npm Project?</summary></details>
+<details><summary>Specific Front End Development</summary></details>
+<details><summary>Vanilla</summary></details>
+<details><summary>CSS</summary></details>
+<details><summary>SASS</summary></details>
+<details><summary>[Resource](https://www.w3schools.com/sass/default.phpJS</summary></details>
+<details><summary>Graphics</summary></details>
+<details><summary>[Resource](https://www.w3schools.com/js/js_graphics.aspCanvas</summary></details>
+<details><summary>[Resource](https://www.w3schools.com/js/js_graphics_canvas.aspPlotly</summary></details>
+<details><summary>[Resource](https://www.w3schools.com/js/js_graphics_plotly.aspChart.js</summary></details>
+<details><summary>[Resource](https://www.w3schools.com/js/js_graphics_chartjs.aspGoogle Chart</summary></details>
+<details><summary>[Resource](https://www.w3schools.com/js/js_graphics_google_chart.aspD3.js</summary></details>
+<details><summary>[Resource](https://www.w3schools.com/js/js_graphics_d3js.aspFrameworks</summary></details>
+<details><summary>CSS Frameworks</summary></details>
+<details><summary>Bootstrap</summary></details>
+<details><summary>Official Site</summary></details>
+<details><summary>[Resource](https://getbootstrap.com/Official docs</summary></details>
+<details><summary>[Resource](https://getbootstrap.com/docs/5.2/getting-started/introduction/W3Schools</summary></details>
+<details><summary>[Resource](https://www.w3schools.com/bootstrap/bootstrap_get_started.aspBulma</summary></details>
+<details><summary>Official site</summary></details>
+<details><summary>[Resource](https://bulma.io/Official Documentation</summary></details>
+<details><summary>[Resource](https://bulma.io/documentation/Getting Started</summary></details>
+<details><summary>[Resource](https://bulma.io/documentation/overview/start/Tailwind</summary></details>
+<details><summary>Official Site</summary></details>
+<details><summary>[Resource](https://tailwindcss.comOfficial Docs</summary></details>
+<details><summary>[Resource](https://tailwindcss.com/docs/installationJS Framework</summary></details>
+<details><summary>REACT</summary></details>
+<details><summary>Fundamental Topics</summary></details>
+<details><summary>[Resource](https://www.w3schools.com/react/default.aspHome</summary></details>
+<details><summary>Intro</summary></details>
+<details><summary>Get Started</summary></details>
+<details><summary>ES6</summary></details>
+<details><summary>Render HTML</summary></details>
+<details><summary>JSX</summary></details>
+<details><summary>Components</summary></details>
+<details><summary>Class</summary></details>
+<details><summary>Props</summary></details>
+<details><summary>Events</summary></details>
+<details><summary>Conditionals</summary></details>
+<details><summary>Lists</summary></details>
+<details><summary>Forms</summary></details>
+<details><summary>Router</summary></details>
+<details><summary>Memo</summary></details>
+<details><summary>CSS Styling</summary></details>
+<details><summary>Sass Styling</summary></details>
+<details><summary>Advanced Topics</summary></details>
+<details><summary>[Resource](https://www.w3schools.com/react/react_hooks.aspWhat is a Hook?</summary></details>
+<details><summary>useState</summary></details>
+<details><summary>useEffect</summary></details>
+<details><summary>useContext</summary></details>
+<details><summary>useRef</summary></details>
+<details><summary>useReducer</summary></details>
+<details><summary>useCallback</summary></details>
+<details><summary>useMemo</summary></details>
+<details><summary>Custom Hooks</summary></details>
+<details><summary>Ecosystem</summary></details>
+<details><summary>Forms</summary></details>
+<details><summary>React Hook Form</summary></details>
+<details><summary>Officil site </summary></details>
+<details><summary>[Resource](https://react-hook-form.com/Get Startted </summary></details>
+<details><summary>[Resource](https://react-hook-form.com/get-startedFormik</summary></details>
+<details><summary>Officaial Site </summary></details>
+<details><summary>[Resource](https://formik.org/Documentation</summary></details>
+<details><summary>[Resource](https://formik.org/docs/overviewTutoral </summary></details>
+<details><summary>[Resource](https://formik.org/docs/tutorialGuide</summary></details>
+<details><summary>[Resource](https://formik.org/docs/guides/validationFinal Form</summary></details>
+<details><summary>Official Site </summary></details>
+<details><summary>[Resource](https://final-form.org/reactDocs</summary></details>
+<details><summary>[Resource](https://final-form.org/docs/react-final-form/getting-startedState Management</summary></details>
+<details><summary>Context/State</summary></details>
+<details><summary>Intro</summary></details>
+<details><summary>[Resource](https://reactjs.org/docs/context.htmlRedux</summary></details>
+<details><summary>Official Site</summary></details>
+<details><summary>[Resource](https://redux.js.orgGetting started</summary></details>
+<details><summary>[Resource](https://redux.js.org/introduction/getting-startedMobX</summary></details>
+<details><summary>Official Site</summary></details>
+<details><summary>[Resource](https://mobx.js.org/README.htmlIntro</summary></details>
+<details><summary>[Resource](https://mobx.js.org/getting-startedAPI Reference</summary></details>
+<details><summary>[Resource](https://mobx.js.org/api.htmlInstallation</summary></details>
+<details><summary>[Resource](https://mobx.js.org/installation.htmlREACT integration</summary></details>
+<details><summary>[Resource](https://mobx.js.org/react-integration.htmlRouters</summary></details>
+<details><summary>React Router</summary></details>
+<details><summary>Official Site</summary></details>
+<details><summary>[Resource](https://reactrouter.com/Offcial Docs</summary></details>
+<details><summary>[Resource](https://reactrouter.com/docsTutorial </summary></details>
+<details><summary>[Resource](https://reactrouter.com/docs/en/v6/getting-started/tutorialReach Router</summary></details>
+<details><summary>[Resource](https://reach.tech/router/About</summary></details>
+<details><summary>Tutorial</summary></details>
+<details><summary>Guides</summary></details>
+<details><summary>Primary API</summary></details>
+<details><summary>Hooks API</summary></details>
+<details><summary>Additional API</summary></details>
+<details><summary>Examples</summary></details>
+<details><summary>SSG and SSR</summary></details>
+<details><summary>Next.js</summary></details>
+<details><summary>The React Framework</summary></details>
+<details><summary>[Resource](https://nextjs.org/Documentation</summary></details>
+<details><summary>[Resource](https://nextjs.org/docsRouting</summary></details>
+<details><summary>[Resource](https://nextjs.org/docs/routing/introductionCreate a Next.js App</summary></details>
+<details><summary>[Resource](https://nextjs.org/learn/basics/create-nextjs-appGatsby</summary></details>
+<details><summary>Official site</summary></details>
+<details><summary>[Resource](https://nextjs.org/learn/basics/create-nextjs-appdocumentation</summary></details>
+<details><summary>[Resource](https://www.gatsbyjs.com/docs/Tutorial</summary></details>
+<details><summary>[Resource](https://www.gatsbyjs.com/docs/tutorial/API Calls</summary></details>
+<details><summary>GraphQL</summary></details>
+<details><summary>Apollo</summary></details>
+<details><summary>Official Site</summary></details>
+<details><summary>[Resource](https://www.apollographql.com/Docs</summary></details>
+<details><summary>[Resource](https://www.apollographql.com/docs/Client</summary></details>
+<details><summary>[Resource](https://www.apollographql.com/docs/react/Server</summary></details>
+<details><summary>[Resource](https://www.apollographql.com/docs/apollo-server/Platform</summary></details>
+<details><summary>[Resource](https://www.apollographql.com/docs/intro/platform/Relay Modern</summary></details>
+<details><summary>Official Site</summary></details>
+<details><summary>[Resource](https://relay.dev/Docs</summary></details>
+<details><summary>[Resource](https://relay.dev/docs/REST API Calls</summary></details>
+<details><summary>Axios</summary></details>
+<details><summary>Official Site</summary></details>
+<details><summary>[Resource](https://axios-http.com/Introduction</summary></details>
+<details><summary>[Resource](https://axios-http.com/docs/introPOST Request</summary></details>
+<details><summary>[Resource](https://axios-http.com/docs/post_exampleAxios API </summary></details>
+<details><summary>[Resource](https://axios-http.com/docs/api_introsuperagent</summary></details>
+<details><summary>[Resource](https://visionmedia.github.io/superagent/Request basics</summary></details>
+<details><summary>Setting header fields</summary></details>
+<details><summary>GET requests</summary></details>
+<details><summary>HEAD requests</summary></details>
+<details><summary>POST / PUT requests</summary></details>
+<details><summary>Setting the Content-Type</summary></details>
+<details><summary>Serializing request body</summary></details>
+<details><summary>Retrying requests</summary></details>
+<details><summary>Setting Accept</summary></details>
+<details><summary>Query strings</summary></details>
+<details><summary>TLS options</summary></details>
+<details><summary>Parsing response bodies</summary></details>
+<details><summary>Response properties</summary></details>
+<details><summary>Aborting requests</summary></details>
+<details><summary>Timeouts</summary></details>
+<details><summary>Authentication</summary></details>
+<details><summary>Following redirects</summary></details>
+<details><summary>Agents for global state</summary></details>
+<details><summary>Piping data</summary></details>
+<details><summary>Multipart requests</summary></details>
+<details><summary>Compression</summary></details>
+<details><summary>Buffering responses</summary></details>
+<details><summary>CORS</summary></details>
+<details><summary>Error handling</summary></details>
+<details><summary>Progress tracking</summary></details>
+<details><summary>Testing on localhost</summary></details>
+<details><summary>Promise and Generator support</summary></details>
+<details><summary>Browser and node versions</summary></details>
+<details><summary>use-http</summary></details>
+<details><summary>[Resource](https://use-http.com/#/REACT UI Frameworks</summary></details>
+<details><summary>Material UI</summary></details>
+<details><summary>Official Site</summary></details>
+<details><summary>[Resource](https://mui.com/MUI System</summary></details>
+<details><summary>[Resource](https://mui.com/system/basics/Joy UI</summary></details>
+<details><summary>[Resource](https://mui.com/joy-ui/getting-started/overview/Material UI</summary></details>
+<details><summary>[Resource](https://mui.com/material-ui/getting-started/overview/MUI Base</summary></details>
+<details><summary>[Resource](https://mui.com/base/getting-started/overview/ANT Design</summary></details>
+<details><summary>Official Site </summary></details>
+<details><summary>[Resource](https://ant.design/Introduction</summary></details>
+<details><summary>[Resource](https://ant.design/docs/spec/introduceAnt Design of React</summary></details>
+<details><summary>[Resource](https://ant.design/docs/react/introduceResources</summary></details>
+<details><summary>[Resource](https://ant.design/docs/resourcesCHAKRA UI</summary></details>
+<details><summary>[Resource](https://chakra-ui.com/Installation</summary></details>
+<details><summary>[Resource](https://chakra-ui.com/getting-startedDesign Principles</summary></details>
+<details><summary>[Resource](https://chakra-ui.com/getting-started/principlesFrameworks</summary></details>
+<details><summary>Create React App</summary></details>
+<details><summary>[Resource](https://chakra-ui.com/getting-started/cra-guideGetting Started with Nextjs</summary></details>
+<details><summary>[Resource](https://chakra-ui.com/getting-started/nextjs-guideGatsby</summary></details>
+<details><summary>[Resource](https://chakra-ui.com/getting-started/gatsby-guideIntegrations</summary></details>
+<details><summary>Chakra UI + Formik</summary></details>
+<details><summary>[Resource](https://chakra-ui.com/getting-started/with-formikChakra UI + React Hook Form</summary></details>
+<details><summary>[Resource](https://chakra-ui.com/getting-started/with-hook-formREACT Bootstrap</summary></details>
+<details><summary>Offcicial site </summary></details>
+<details><summary>[Resource](https://react-bootstrap.github.io/Components</summary></details>
+<details><summary>[Resource](https://react-bootstrap.github.io/components/alerts/Get Started</summary></details>
+<details><summary>[Resource](https://react-bootstrap.github.io/getting-started/introduction/General Backend Development</summary></details>
+<details><summary>Security </summary></details>
+<details><summary>Silicon</summary></details>
+<details><summary>BIOS</summary></details>
+<details><summary>OS</summary></details>
+<details><summary>Apps</summary></details>
+<details><summary>"""Browsers"""</summary></details>
+<details><summary>"""Web Apps"""</summary></details>
+<details><summary>Actual Programming Languages</summary></details>
+<details><summary>JAVA</summary></details>
+<details><summary>[Resource](https://www.w3schools.com/java/default.aspSpring</summary></details>
+<details><summary>[Resource](https://www.tutorialspoint.com/spring/spring_tutorial.pdfC#</summary></details>
+<details><summary>[Resource](https://www.w3schools.com/cs/index.phpASP.NET</summary></details>
+<details><summary>[Resource](https://www.tutorialspoint.com/asp.net/asp.net_tutorial.pdfPHP</summary></details>
+<details><summary>[Resource](https://www.tutorialspoint.com/php/php_tutorial.pdfLaravel</summary></details>
+<details><summary>[Resource](https://www.tutorialspoint.com/laravel/laravel_tutorial.pdfPython</summary></details>
+<details><summary>[Resource](https://www.w3schools.com/python/default.aspDjango</summary></details>
+<details><summary>[Resource](https://www.tutorialspoint.com/django/django_tutorial.pdfFlask</summary></details>
+<details><summary>[Resource](https://www.tutorialspoint.com/flask/flask_tutorial.pdfRuby</summary></details>
+<details><summary>[Resource](https://www.tutorialspoint.com/ruby/ruby_tutorial.pdfRails</summary></details>
+<details><summary>[Resource](https://www.youtube.com/watch?v=fmyvWz5TUWgGO</summary></details>
+<details><summary>[Resource](https://www.w3schools.com/go/index.phpGIN</summary></details>
+<details><summary>[Resource](https://gin-gonic.com/Docs</summary></details>
+<details><summary>[Resource](https://gin-gonic.com/docs/RUST</summary></details>
+<details><summary>[Resource](https://www.tutorialspoint.com/rust/rust_tutorial.pdfRocket.rs</summary></details>
+<details><summary>Overview</summary></details>
+<details><summary>[Resource](https://rocket.rs/v0.5-rc/overviewGuide</summary></details>
+<details><summary>[Resource](https://rocket.rs/v0.5-rc/guideAPI</summary></details>
+<details><summary>[Resource](https://api.rocket.rs/v0.5-rc/rocketAPI's</summary></details>
+<details><summary>REST</summary></details>
+<details><summary>[Resource](https://www.restapitutorial.com/SOAP</summary></details>
+<details><summary>Web</summary></details>
+<details><summary>[Resource](https://www.guru99.com/soap-simple-object-access-protocol.htmlPDF</summary></details>
+<details><summary>[Resource](https://www.tutorialspoint.com/soap/soap_tutorial.pdfgRPC</summary></details>
+<details><summary>[Resource](https://grpc.ioIntroduction</summary></details>
+<details><summary>[Resource](https://grpc.io/docs/what-is-grpc/introduction/Core concepts</summary></details>
+<details><summary>[Resource](https://grpc.io/docs/what-is-grpc/core-concepts/Supported Languages</summary></details>
+<details><summary>[Resource](https://grpc.io/docs/languages/Guides</summary></details>
+<details><summary>[Resource](https://grpc.io/docs/guides/Platforms</summary></details>
+<details><summary>[Resource](https://grpc.io/docs/platforms/HATEOAS</summary></details>
+<details><summary>[Resource](https://restfulapi.net/hateoas/Gateways</summary></details>
+<details><summary>[Resource](https://www.tutorialspoint.com/what-are-gateways-in-computer-networkGraphQL</summary></details>
+<details><summary>[Resource](https://graphql.org/learn/Swagger</summary></details>
+<details><summary>[Resource](https://swagger.io/#OpenAPI</summary></details>
+<details><summary>[Resource](https://www.openapis.org/Databases</summary></details>
+<details><summary>SQL</summary></details>
+<details><summary>MySQL</summary></details>
+<details><summary>[Resource](https://www.mysqltutorial.org/PostgreSQL</summary></details>
+<details><summary>[Resource](https://www.postgresqltutorial.com/NoSQL</summary></details>
+<details><summary>Types</summary></details>
+<details><summary>Document</summary></details>
+<details><summary>MongoDB</summary></details>
+<details><summary>OFFICIAL WEBSITE</summary></details>
+<details><summary>[Resource](https://www.mongodb.com/OFFICIAL DOCUMENTATION </summary></details>
+<details><summary>[Resource](https://docs.mongodb.com/OFFICIAL COURSES</summary></details>
+<details><summary>[Resource](https://university.mongodb.com/learning_paths/developerSANDBOX</summary></details>
+<details><summary>[Resource](https://mongoplayground.net/Time Series</summary></details>
+<details><summary>InfluxDB</summary></details>
+<details><summary>[Resource](https://www.influxdata.com/Real time </summary></details>
+<details><summary>Firebase</summary></details>
+<details><summary>Fireship.io</summary></details>
+<details><summary>[Resource](https://fireship.io/lessons/the-ultimate-beginners-guide-to-firebase/FreeCodeCamp</summary></details>
+<details><summary>[Resource](https://www.youtube.com/watch?v=fgdpvwEWJ9M&ab_channel=freeCodeCamp.orgColumn</summary></details>
+<details><summary>Cassandra</summary></details>
+<details><summary>Intro</summary></details>
+<details><summary>[Resource](https://www.tutorialspoint.com/cassandra/cassandra_tutorial.pdfBASICS</summary></details>
+<details><summary>[Resource](https://cassandra.apache.org/_/cassandra-basics.htmlQUICKSTART</summary></details>
+<details><summary>[Resource](https://cassandra.apache.org/_/quickstart.htmlECOSYSTEM</summary></details>
+<details><summary>[Resource](https://cassandra.apache.org/_/ecosystem.htmlDOCUMENTATION</summary></details>
+<details><summary>[Resource](https://cassandra.apache.org/doc/latest/CASE STUDIES</summary></details>
+<details><summary>[Resource](https://cassandra.apache.org/_/case-studies.htmlRESOURCES</summary></details>
+<details><summary>[Resource](https://cassandra.apache.org/_/resources.htmlTESTING!!!</summary></details>
+<details><summary>[Resource](https://www.softwaretestinghelp.com/types-of-software-testing/Different Types Of Software Testing</summary></details>
+<details><summary>Functional Testing</summary></details>
+<details><summary>#1) Unit Testing</summary></details>
+<details><summary>#2) Integration Testing</summary></details>
+<details><summary>#3) System Testing</summary></details>
+<details><summary>#4) Acceptance Testing</summary></details>
+<details><summary>Non-Functional Testing</summary></details>
+<details><summary>#1) Security Testing</summary></details>
+<details><summary>#2) Performance Testing</summary></details>
+<details><summary>#3) Usability Testing</summary></details>
+<details><summary>#4) Compatibility testing</summary></details>
+<details><summary>Other Types of Testing</summary></details>
+<details><summary>Conclusion</summary></details>
+<details><summary>Recommended Reading</summary></details>
+<details><summary>CI/CD</summary></details>
+<details><summary>Intro</summary></details>
+<details><summary>[Resource](https://www.infoworld.com/article/3271126/what-is-cicd-continuous-integration-and-continuous-delivery-explained.htmlRedHat Rabbit Hole</summary></details>
+<details><summary>[Resource](https://www.redhat.com/en/topics/devops/what-is-ci-cdGitHub Actions</summary></details>
+<details><summary>[Resource](https://docs.github.com/en/actions/guidesBe A Better Dev</summary></details>
+<details><summary>[Resource](https://www.youtube.com/watch?v=OPwU3UWCxhwSimplilearn</summary></details>
+<details><summary>[Resource](https://www.youtube.com/watch?v=h9K1NnqwUvEThe Cloud</summary></details>
+<details><summary>AZURE</summary></details>
+<details><summary>[Resource](https://docs.microsoft.com/en-us/learn/certifications/Google</summary></details>
+<details><summary>[Resource](https://grow.google/certificates/#/ProfessionalCertificatesAWS</summary></details>
+<details><summary>[Resource](https://aws.amazon.com/certification/exams/[Resource](https://aws.amazon.com/certification/exams/CISCO</summary></details>
+<details><summary>[Resource](https://www.cisco.com/c/en/us/training-events/training-certifications/certifications.htmlThe Periodic Table of SDLC</summary></details>
+<details><summary>Basics-ish</summary></details>
+<details><summary>SDLC Models</summary></details>
+<details><summary>[Resource](https://www.tutorialspoint.com/sdlc/sdlc_tutorial.pdfStep 1: Brief</summary></details>
+<details><summary>project definition </summary></details>
+<details><summary>target audience</summary></details>
+<details><summary>target audience</summary></details>
+<details><summary>goals</summary></details>
+<details><summary>technical specifications</summary></details>
+<details><summary>project timeline</summary></details>
+<details><summary>Step 2: Planning</summary></details>
+<details><summary>research</summary></details>
+<details><summary>brainstorming</summary></details>
+<details><summary>information architecture</summary></details>
+<details><summary>layout</summary></details>
+<details><summary>usability</summary></details>
+<details><summary>wireframes and mock-ups</summary></details>
+<details><summary>prototype template variations</summary></details>
+<details><summary>Step 3: Design</summary></details>
+<details><summary>color scheme</summary></details>
+<details><summary>logo and color scheme</summary></details>
+<details><summary>graphic design and artwork</summary></details>
+<details><summary>UI Visual components</summary></details>
+<details><summary>Sitemap</summary></details>
+<details><summary>Media</summary></details>
+<details><summary>UI/UX</summary></details>
+<details><summary>cross-device compatibility</summary></details>
+<details><summary>content creation</summary></details>
+<details><summary>content collection</summary></details>
+<details><summary>Step 4: Development</summary></details>
+<details><summary>Build</summary></details>
+<details><summary>Code </summary></details>
+<details><summary>SEO</summary></details>
+<details><summary>Step 5:Testing</summary></details>
+<details><summary>Unit Testing</summary></details>
+<details><summary>Integration Testing</summary></details>
+<details><summary>System Testing</summary></details>
+<details><summary>Acceptance Testing</summary></details>
+<details><summary>Step 6: Launch</summary></details>
+<details><summary>Beta</summary></details>
+<details><summary>Live Public Server</summary></details>
+<details><summary>deliverables</summary></details>
+<details><summary>training and documentation</summary></details>
+<details><summary>Step 7: Maintenance</summary></details>
+<details><summary>support </summary></details>
+<details><summary>Reporting </summary></details>
+<details><summary>analytics</summary></details>
+<details><summary>troubleshoot</summary></details>
+<details><summary>

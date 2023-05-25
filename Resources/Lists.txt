@@ -1,0 +1,44 @@
+Step 1: Brief
+project definition 
+target audience
+target audience
+goals
+technical specifications
+project timeline
+Step 2: Planning
+research
+brainstorming
+information architecture
+layout
+usability
+wireframes and mock-ups
+prototype template variations
+Step 3: Design
+color scheme
+logo and color scheme
+graphic design and artwork
+UI Visual components
+Sitemap
+Media
+UI/UX
+cross-device compatibility
+content creation
+content collection
+Step 4: Development
+Code and Build
+SEO
+Step 5:Testing
+Unit Testing					
+Integration Testing					
+System Testing					
+Acceptance Testing					
+Step 6: Launch
+Beta
+Live Public Server
+deliverables
+training and documentation
+Step 7: Maintenance
+support 
+Reporting 
+analytics
+troubleshoot
