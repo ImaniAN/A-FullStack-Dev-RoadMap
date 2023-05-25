@@ -225,7 +225,7 @@ Project Link: [https://github.com/ImaniAN](https://github.com/ImaniAN)
 [issues-shield]: https://img.shields.io/github/issues/ImaniAN/A-FullStack-Dev-RoadMap.svg?style=for-the-badge
 [issues-url]: https://github.com/ImaniAN/A-FullStack-Dev-RoadMap/issues
 [license-shield]: https://img.shields.io/github/license/ImaniAN/A-FullStack-Dev-RoadMap.svg?style=for-the-badge
-[license-url]: https://github.com/ImaniAN/A-FullStack-Dev-RoadMap/blob/master/LICENSE.txt
+[license-url]: https://github.com/ImaniAN/A-FullStack-Dev-RoadMap/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/imani-niyigena-04ab47136/
 [product-screenshot]: images/screenshot.png
