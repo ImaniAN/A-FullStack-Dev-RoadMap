@@ -1,0 +1,62 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {},
+	"extensions": {
+		"recommendations": [
+			"bierner.emojisense",
+			"piotrpalarz.vscode-gitignore-generator",
+			"formulahendry.auto-close-tag",
+			"formulahendry.auto-complete-tag",
+			"steoates.autoimport",
+			"formulahendry.auto-rename-tag",
+			"mgmcdermott.vscode-language-babel",
+			"michelemelluso.code-beautifier",
+			"alefragnani.bookmarks",
+			"formulahendry.code-runner",
+			"streetsidesoftware.code-spell-checker",
+			"naumovs.color-highlight",
+			"bierner.color-info",
+			"anseki.vscode-color",
+			"aeschli.vscode-css-formatter",
+			"pranaygp.vscode-css-peek",
+			"waderyan.gitblame",
+			"donjayamanne.git-extension-pack",
+			"mhutchie.git-graph",
+			"visualstudioexptteam.vscodeintellicode",
+			"visualstudioexptteam.intellicode-api-usage-examples",
+			"pkief.material-icon-theme",
+			"christian-kohler.path-intellisense",
+			"esbenp.prettier-vscode",
+			"shardulm94.trailing-spaces",
+			"vscode-icons-team.vscode-icons",
+			"mrcrowl.easy-less",
+			"shaharkazaz.git-merger",
+			"github.codespaces",
+			"github.vscode-pull-request-github",
+			"nhoizey.gremlins",
+			"vincaslt.highlight-matching-tag",
+			"kisstkondoros.vscode-gutter-preview",
+			"moalamri.inline-fold",
+			"zignd.html-css-class-completion",
+			"bierner.markdown-emoji",
+			"bierner.markdown-preview-github-styles",
+			"davidanson.vscode-markdownlint",
+			"unifiedjs.vscode-mdx",
+			"christian-kohler.npm-intellisense",
+			"fivethree.vscode-svelte-snippets",
+			"pivaszbs.svelte-autoimport",
+			"svelte.svelte-vscode",
+			"ardenivanov.svelte-intellisense",
+			"bradlc.vscode-tailwindcss",
+			"austenc.tailwind-docs",
+			"bourhaouta.tailwindshades",
+			"wayou.vscode-todo-highlight",
+			"gruntfuggly.todo-tree",
+			"lihui.vs-color-picker"
+		]
+	}
+}
