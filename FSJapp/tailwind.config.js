@@ -1,12 +1,14 @@
+import { fontFamily } from 'tailwindcss/defaultTheme';
+
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
-      },
+        sans: ['Inter', ...fontFamily.sans],
+      }
     },
   },
-  // ...
+  plugins: [],
 }
