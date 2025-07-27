@@ -2,18 +2,46 @@
 	export let data;
 </script>
 
-<label for="form-spoken-languages" class="block text-sm font-medium text-slate-700"
-	>task_overview
-</label>
-<select
-	placeholder="Click..."
-	autocomplete=""
-	id=""
-	name=""
-	class="mt-1 rounded-lg flex-1 appearance-none border-2 border-teal-400 border-dashed w-full py-2 px-4 bg-indigo-50 text-slate-700 placeholder-amber-500 text-base focus:ring-indigo-600 focus:border-transparent shadow focus:outline-none focus:ring"
->
-	<option value="" disabled selected hidden>Click...</option>
-	{#each data.task_overview as task_overviews}
-		<option>{task_overviews.task_name}</option>
-	{/each}
-</select>
+<div class="h-max">
+	<div class="grid grid-cols-3 gap-2 p-2">
+		<div class="h-full rounded-lg bg-gray-300 col-span-2 flex items-center justify-center">
+			<span class="text-gray-600 font-mdium">Main Content</span>
+		</div>
+
+		<div class="h-full rounded-lg bg-gray-100 p-1">
+			<div class="grid grid-cols-2 gap-2 mb-1 h-3/4">
+				<div class="h-full rounded bg-gray-300 flex items-center justify-center">
+					<span class="text-xs text-gray-600">Account</span>
+				</div>
+				<div class="h-full rounded bg-gray-300 flex items-center justify-center">
+					<span class="text-xs text-gray-600">Settings</span>
+				</div>
+			</div>
+
+			<!-- Progress Bar -->
+			<div class=" h-1/6 rounded bg-gray-300 flex items-center justify-center">
+				<span class="text-xs text-gray-600">Progress</span>
+			</div>
+		</div>
+	</div>
+
+	<!-- Navigation Section -->
+	<div class="grid grid-cols-4 gap-2 p-2 h-72">
+		<div class="h-full rounded-lg bg-gray-300 flex items-center justify-center">
+			<span class="text-gray-600 font-medium">Left Nav</span>
+		</div>
+		<div class="h-full rounded-lg bg-gray-300 col-span-2 flex items-center justify-center">
+			<span class="text-gray-600 font-medium">Navigation Cards</span>
+		</div>
+		<div class="h-full rounded-lg bg-gray-300 flex items-center justify-center">
+			<span class="text-gray-600 font-medium text-center">Data Legend</span>
+		</div>
+	</div>
+
+	<!-- Footer Section -->
+	<div class="p-2">
+		<div class="h-full rounded-lg bg-gray-300 flex items-center justify-center">
+			<span class="text-gray-600 font-medium">Footer Content</span>
+		</div>
+	</div>
+</div>
