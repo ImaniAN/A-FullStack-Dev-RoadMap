@@ -34,7 +34,7 @@
 		>
 			<!-- Shine effect -->
 			<div
-				class="h-full w-full bg-gradient-to-r from-transparent via-white/25 to-transparent animate-pulse"
+				class="h-full w-full bg-gradient-to-r from-transparent via-white/25 to-transparent animate-ping"
 			/>
 		</div>
 	</div>
