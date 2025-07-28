@@ -1,7 +1,7 @@
 {
-    "buildCommand": " npm run build",
+    "buildCommand": "cd FSJapp && npm run build",
     "outputDirectory": "FSJapp/.svelte-kit/output/client",
-    "installCommand": "npm install",
+    "installCommand": "cd FSJapp && npm install",
     "functions": {
         "FSJapp/.svelte-kit/output/server/index.js": {
             "runtime": "nodejs18.17.0"
