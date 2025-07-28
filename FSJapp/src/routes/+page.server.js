@@ -1,7 +1,9 @@
 import { supabase } from "$lib/supabaseClient";
+import { loadSideNavData } from "../components/MainBody/SideNav/+sideNav.server.js";
 
 export async function load() {
-  const { data } = await supabase
+  // Load existing roadmap tasks
+  const { data: roadmapTasks } = await supabase
     .from("roadmap_tasks")
     .select(`
       *,
@@ -9,7 +11,11 @@ export async function load() {
     `)
     .order('created_at', { ascending: true });
 
+  // Load SideNav data
+  const sideNavData = await loadSideNavData();
+
   return {
-    roadmap_tasks: data ?? [],
+    roadmap_tasks: roadmapTasks || [],
+    sideNavData
   };
 }

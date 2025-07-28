@@ -6,6 +6,8 @@
 	import TitleHeader from '../components/TopNav/HeaderTitle/titleHeader.svelte';
 	import Account from '../components/TopNav/UserProfile/account.svelte';
 	import Settings from '../components/TopNav/UserProfile/settings.svelte';
+
+	export let data;
 </script>
 
 <div class="h-max">
@@ -20,9 +22,9 @@
 		</div>
 	</div>
 
-	<div class="grid grid-cols-4 gap-2 p-2 h-72">
-		<DataLegend />
+	<div class="grid grid-cols-4 gap-2 p-2 h-[80vh]">
+		<SideNav sideNavData={data.sideNavData} />
 		<NavInfoCard />
-		<SideNav />
+		<DataLegend />
 	</div>
 </div>
