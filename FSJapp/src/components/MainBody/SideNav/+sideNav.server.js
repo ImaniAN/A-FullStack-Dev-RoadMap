@@ -48,8 +48,7 @@ export async function loadSideNavData() {
             description,
             created_at
         `)
-		.order('level', { ascending: true })
-		.order('name', { ascending: true });
+		.order('id', { ascending: true }); // Order by insertion order (rowid)
 
 	// Get all roadmap tasks with their category relationships
 	const { data: tasks } = await supabase
@@ -68,7 +67,7 @@ export async function loadSideNavData() {
                 name
             )
         `)
-		.order('task_name', { ascending: true });
+		.order('id', { ascending: true }); // Order by insertion order (rowid)
 
 	// Get resources for tasks
 	const { data: resources } = await supabase
@@ -81,7 +80,8 @@ export async function loadSideNavData() {
             resource_type,
             is_free,
             rating
-        `);
+        `)
+		.order('id', { ascending: true }); // Order by insertion order (rowid)
 
 	// Build hierarchical structure
 	const categoryHierarchy = buildCategoryTree(categories ?? []);
@@ -105,6 +105,11 @@ export async function loadSideNavData() {
 		}
 		return acc;
 	}, /** @type {Record<number, Task[]>} */({}));
+
+	// Sort tasks within each category by their insertion order (id)
+	Object.keys(tasksByCategory).forEach(categoryId => {
+		tasksByCategory[parseInt(categoryId)].sort((/** @type {Task} */ a, /** @type {Task} */ b) => a.id - b.id);
+	});
 
 	return {
 		categoryHierarchy,
@@ -137,6 +142,19 @@ function buildCategoryTree(categories) {
 			categoryMap[cat.parent_id].children.push(categoryMap[cat.id]);
 		}
 	});
+
+	// Sort children arrays by id to maintain insertion order
+	/**
+	 * @param {Category} category
+	 */
+	const sortChildrenById = (category) => {
+		if (category.children && category.children.length > 0) {
+			category.children.sort((/** @type {Category} */ a, /** @type {Category} */ b) => a.id - b.id);
+			category.children.forEach(sortChildrenById);
+		}
+	};
+
+	rootCategories.forEach(sortChildrenById);
 
 	return rootCategories;
 }

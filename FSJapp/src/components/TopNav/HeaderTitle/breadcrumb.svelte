@@ -46,12 +46,12 @@
 	 * @param {number} categoryId
 	 * @param {any[]} categoryHierarchy
 	 */
-	function expandParentCategories(categoryId, categoryHierarchy) {
+	function expandParentCategories(categoryId: number, categoryHierarchy: any[]) {
 		const category = findCategoryById(categoryId, categoryHierarchy);
 		if (category) {
 			// Find and expand all parent categories
 			let currentCategory = category;
-			const categoriesToExpand = [];
+			const categoriesToExpand: number[] = [];
 
 			while (currentCategory) {
 				categoriesToExpand.push(currentCategory.id);
@@ -74,7 +74,7 @@
 	 * Handle breadcrumb click - navigate using the same system as sideNav
 	 * @param {BreadcrumbItem} crumb
 	 */
-	function handleBreadcrumbClick(crumb) {
+	function handleBreadcrumbClick(crumb: BreadcrumbItem) {
 		if (crumb.categoryId && $navigationContext?.categoryHierarchy) {
 			const category = findCategoryById(crumb.categoryId, $navigationContext.categoryHierarchy);
 			if (category) {
@@ -85,9 +85,9 @@
 				if (crumb.taskId) {
 					const tasks = $navigationContext.topicsByCategory[crumb.categoryId] || [];
 					const task = tasks.find((t) => t.id === crumb.taskId);
-					updateBreadcrumbs(category, task || null, $navigationContext.categoryHierarchy);
+					updateBreadcrumbs(category, $navigationContext.categoryHierarchy, task || null);
 				} else {
-					updateBreadcrumbs(category, null, $navigationContext.categoryHierarchy);
+					updateBreadcrumbs(category, $navigationContext.categoryHierarchy, null);
 				}
 			}
 		}
@@ -99,13 +99,13 @@
 	 * @param {any[]} categories
 	 * @returns {any|null}
 	 */
-	function findCategoryById(categoryId, categories) {
+	function findCategoryById(categoryId: number, categories: any[]): any | null {
 		for (const category of categories) {
 			if (category.id === categoryId) {
 				return category;
 			}
 			if (category.children && category.children.length > 0) {
-				const found = findCategoryById(categoryId, category.children);
+				const found: any = findCategoryById(categoryId, category.children);
 				if (found) return found;
 			}
 		}

@@ -32,34 +32,41 @@ export const navigationContext = writable({
 /**
  * Update breadcrumbs based on selected category/task
  * @param {any} category
- * @param {any} [task]
  * @param {any[]} categoryHierarchy
+ * @param {any} [task]
  */
-export function updateBreadcrumbs(category, task, categoryHierarchy) {
+export function updateBreadcrumbs(category, categoryHierarchy, task) {
+    /** @type {BreadcrumbItem[]} */
     const breadcrumbs = [{ label: 'Home', href: '/' }];
 
     // Find category path
     const categoryPath = findCategoryPath(category.id, categoryHierarchy);
 
-    // Add category breadcrumbs
-    categoryPath.forEach((cat, index) => {
-        breadcrumbs.push({
-            label: cat.name,
-            href: `/category/${cat.id}`,
-            categoryId: cat.id,
-            active: !task && index === categoryPath.length - 1
+    // Add category breadcrumbs only if path is found
+    if (categoryPath) {
+        categoryPath.forEach((cat, index) => {
+            /** @type {BreadcrumbItem} */
+            const breadcrumbItem = {
+                label: cat.name,
+                href: `/category/${cat.id}`,
+                categoryId: cat.id,
+                active: !task && index === categoryPath.length - 1
+            };
+            breadcrumbs.push(breadcrumbItem);
         });
-    });
+    }
 
     // Add task breadcrumb if present
     if (task) {
-        breadcrumbs.push({
+        /** @type {BreadcrumbItem} */
+        const taskBreadcrumb = {
             label: task.task_name || task.name,
             href: `/category/${category.id}/task/${task.id}`,
             categoryId: category.id,
             taskId: task.id,
             active: true
-        });
+        };
+        breadcrumbs.push(taskBreadcrumb);
     }
 
     navigationContext.update(ctx => ({
@@ -75,7 +82,7 @@ export function updateBreadcrumbs(category, task, categoryHierarchy) {
  * @param {number} categoryId
  * @param {any[]} categories
  * @param {any[]} [path]
- * @returns {any[]}
+ * @returns {any[] | null}
  */
 function findCategoryPath(categoryId, categories, path = []) {
     for (const category of categories) {

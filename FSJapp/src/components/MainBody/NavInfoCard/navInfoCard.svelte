@@ -61,7 +61,7 @@
 	}
 </script>
 
-<div class="h-full rounded-lg bg-white shadow-sm border col-span-2 overflow-y-auto">
+<div class="h-full rounded-lg bg-white shadow-sm border overflow-y-auto">
 	{#if selectedTask}
 		<!-- Task Information Card -->
 		<div class="p-6">
