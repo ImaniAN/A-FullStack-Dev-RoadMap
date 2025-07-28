@@ -1,28 +1,25 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { onMount } from 'svelte';
+	import { navigationContext } from '$lib/stores/breadcrumbStore.js';
 
 	// Breadcrumb item type
 	interface BreadcrumbItem {
 		label: string;
 		href: string;
 		active?: boolean;
+		categoryId?: number;
+		taskId?: number;
 	}
 
 	let breadcrumbs: BreadcrumbItem[] = [];
 
-	// TODO: Connect to actual routing data
-	// TODO: Generate breadcrumbs based on current route
-	// TODO: Add dynamic breadcrumb generation from route params
-
-	onMount(() => {
-		// Mock breadcrumb data - replace with actual route-based logic
-		breadcrumbs = [
-			{ label: 'Home', href: '/' },
-			{ label: 'Frontend', href: '/frontend' },
-			{ label: 'React', href: '/frontend/react', active: true }
-		];
-	});
+	// React to navigation context changes
+	$: if ($navigationContext?.breadcrumbs) {
+		breadcrumbs = $navigationContext.breadcrumbs;
+	} else if ($page?.url?.pathname) {
+		// Fallback to route-based breadcrumbs
+		breadcrumbs = generateBreadcrumbs($page.url.pathname);
+	}
 
 	// Generate breadcrumbs from current route
 	function generateBreadcrumbs(currentPath: string): BreadcrumbItem[] {
@@ -55,9 +52,18 @@
 		{#each breadcrumbs as crumb, index}
 			<li class="flex items-center">
 				{#if crumb.active}
-					<span class="font-medium text-gray-900">{crumb.label}</span>
+					<span
+						class="font-medium text-gray-900"
+						title={crumb.categoryId ? `Category ID: ${crumb.categoryId}` : ''}
+					>
+						{crumb.label}
+					</span>
 				{:else}
-					<a href={crumb.href} class="transition-colors hover:text-gray-900 hover:underline">
+					<a
+						href={crumb.href}
+						class="transition-colors hover:text-gray-900 hover:underline"
+						title={crumb.categoryId ? `Category ID: ${crumb.categoryId}` : ''}
+					>
 						{crumb.label}
 					</a>
 				{/if}

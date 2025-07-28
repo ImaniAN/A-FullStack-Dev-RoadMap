@@ -1,5 +1,7 @@
 <script>
 	// @ts-check
+	import { navigationContext, updateBreadcrumbs } from '$lib/stores/breadcrumbStore.js';
+	import { onMount } from 'svelte';
 
 	/**
 	 * @typedef {Object} Category
@@ -46,10 +48,33 @@
 
 	let expandedCategories = new Set();
 
+	onMount(() => {
+		// Initialize navigation context with side nav data
+		navigationContext.update((ctx) => ({
+			...ctx,
+			categoryHierarchy,
+			topicsByCategory
+		}));
+	});
+
+	// Update breadcrumbs when data changes
+	$: if (categoryHierarchy.length > 0) {
+		navigationContext.update((ctx) => ({
+			...ctx,
+			categoryHierarchy,
+			topicsByCategory
+		}));
+	}
+
 	/**
 	 * @param {number} categoryId
 	 */
 	function toggleCategory(categoryId) {
+		const category = findCategoryById(categoryId, categoryHierarchy);
+		if (category) {
+			updateBreadcrumbs(category, null, categoryHierarchy);
+		}
+
 		if (expandedCategories.has(categoryId)) {
 			expandedCategories.delete(categoryId);
 		} else {
@@ -62,7 +87,30 @@
 	 * @param {{ id?: number; task_name: any; category_id?: number; task_type?: string; difficulty_level?: string; estimated_hours?: number | null; prerequisites?: string | null; status?: string; name: any; resources?: any[]; }} task
 	 */
 	function handleTaskClick(task) {
+		const category = findCategoryById(task.category_id, categoryHierarchy);
+		if (category && task.category_id) {
+			updateBreadcrumbs(category, task, categoryHierarchy);
+		}
 		console.log('Task clicked:', task.task_name || task.name);
+	}
+
+	/**
+	 * Find category by ID in hierarchy
+	 * @param {number} categoryId
+	 * @param {Category[]} categories
+	 * @returns {Category|null}
+	 */
+	function findCategoryById(categoryId, categories) {
+		for (const category of categories) {
+			if (category.id === categoryId) {
+				return category;
+			}
+			if (category.children && category.children.length > 0) {
+				const found = findCategoryById(categoryId, category.children);
+				if (found) return found;
+			}
+		}
+		return null;
 	}
 
 	/**
