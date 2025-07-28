@@ -9,7 +9,7 @@
 	export let data;
 </script>
 
-<div class="h-max">
+<div class="min-h-screen flex flex-col">
 	<div class="grid grid-cols-3 gap-2 p-2">
 		<TitleHeader />
 		<div
@@ -19,7 +19,7 @@
 		</div>
 	</div>
 
-	<div class="grid grid-cols-4 gap-2 p-2 h-[80vh]">
+	<div class="grid grid-cols-1 md:grid-cols-4 gap-2 p-1 flex-1 min-h-0">
 		<SideNav sideNavData={data.sideNavData} />
 		<InfoCard />
 		<DataLegend />

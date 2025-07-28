@@ -42,6 +42,7 @@
 					const task = tasks.find((t) => t.id === crumb.taskId);
 					updateBreadcrumbs(category, $navigationContext.categoryHierarchy, task || null);
 				} else {
+					// Update breadcrumbs and trigger cumulative count recalculation
 					updateBreadcrumbs(category, $navigationContext.categoryHierarchy, null);
 				}
 			}

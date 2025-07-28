@@ -51,9 +51,6 @@
 			<span>{getCategoryIcon(category)}</span>
 			<span class={getLevelColor(category.level)}>{category.name}</span>
 			<span class="text-xs text-gray-400">L{category.level}</span>
-			{#if depth > 2}
-				<span class="text-xs text-blue-400">D{depth}</span>
-			{/if}
 		</div>
 		<span class="text-gray-400 text-xs">
 			{expandedCategories.has(category.id) ? '▲' : '▼'}
