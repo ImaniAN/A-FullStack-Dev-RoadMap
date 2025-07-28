@@ -4,7 +4,7 @@
     "installCommand": "npm install",
     "functions": {
         "FSJapp/.svelte-kit/output/server/index.js": {
-            "runtime": "nodejs18.x"
+            "runtime": "nodejs18.17.0"
         }
     }
 }

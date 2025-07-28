@@ -8,9 +8,8 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		// Using Vercel adapter with explicit Node.js 18 runtime
 		adapter: adapter({
-			runtime: 'nodejs18.x'
+			runtime: "nodejs18.17.0"
 		})
 	}
 };
