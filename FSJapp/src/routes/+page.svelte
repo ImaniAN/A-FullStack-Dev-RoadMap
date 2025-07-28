@@ -6,6 +6,7 @@
 	import TitleHeader from '../components/TopNav/HeaderTitle/titleHeader.svelte';
 	import Account from '../components/TopNav/UserProfile/account.svelte';
 	import Settings from '../components/TopNav/UserProfile/settings.svelte';
+	import Footer from '../components/Footer/footer.svelte';
 
 	export let data;
 </script>
@@ -27,4 +28,7 @@
 		<NavInfoCard />
 		<DataLegend />
 	</div>
+
+	<!-- Footer Component -->
+	<Footer />
 </div>
