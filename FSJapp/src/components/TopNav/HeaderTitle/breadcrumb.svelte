@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { navigationContext } from '$lib/stores/breadcrumbStore.js';
+	import { navigationContext, updateBreadcrumbs } from '$lib/stores/breadcrumbStore.js';
 
 	// Breadcrumb item type
 	interface BreadcrumbItem {
@@ -16,12 +16,12 @@
 	// React to navigation context changes
 	$: if ($navigationContext?.breadcrumbs) {
 		breadcrumbs = $navigationContext.breadcrumbs;
-	} else if ($page?.url?.pathname) {
-		// Fallback to route-based breadcrumbs
-		breadcrumbs = generateBreadcrumbs($page.url.pathname);
+	} else {
+		// Default fallback breadcrumbs
+		breadcrumbs = [{ label: 'Home', href: '/', active: true }];
 	}
 
-	// Generate breadcrumbs from current route
+	// Generate breadcrumbs from current route (kept for potential future use)
 	function generateBreadcrumbs(currentPath: string): BreadcrumbItem[] {
 		const segments = currentPath.split('/').filter(Boolean);
 		const items: BreadcrumbItem[] = [{ label: 'Home', href: '/' }];
@@ -41,9 +41,87 @@
 		return items;
 	}
 
-	// React to route changes
-	$: if ($page?.url?.pathname) {
-		breadcrumbs = generateBreadcrumbs($page.url.pathname);
+	/**
+	 * Auto-expand parent categories when navigating via breadcrumb
+	 * @param {number} categoryId
+	 * @param {any[]} categoryHierarchy
+	 */
+	function expandParentCategories(categoryId, categoryHierarchy) {
+		const category = findCategoryById(categoryId, categoryHierarchy);
+		if (category) {
+			// Find and expand all parent categories
+			let currentCategory = category;
+			const categoriesToExpand = [];
+
+			while (currentCategory) {
+				categoriesToExpand.push(currentCategory.id);
+				if (currentCategory.parent_id) {
+					currentCategory = findCategoryById(currentCategory.parent_id, categoryHierarchy);
+				} else {
+					break;
+				}
+			}
+
+			// Update the navigation context with expanded categories
+			navigationContext.update((ctx) => ({
+				...ctx,
+				expandedCategories: new Set([...ctx.expandedCategories, ...categoriesToExpand])
+			}));
+		}
+	}
+
+	/**
+	 * Handle breadcrumb click - navigate using the same system as sideNav
+	 * @param {BreadcrumbItem} crumb
+	 */
+	function handleBreadcrumbClick(crumb) {
+		if (crumb.categoryId && $navigationContext?.categoryHierarchy) {
+			const category = findCategoryById(crumb.categoryId, $navigationContext.categoryHierarchy);
+			if (category) {
+				// Auto-expand the clicked category and its parents
+				expandParentCategories(crumb.categoryId, $navigationContext.categoryHierarchy);
+
+				// If it's a task breadcrumb, find the task too
+				if (crumb.taskId) {
+					const tasks = $navigationContext.topicsByCategory[crumb.categoryId] || [];
+					const task = tasks.find((t) => t.id === crumb.taskId);
+					updateBreadcrumbs(category, task || null, $navigationContext.categoryHierarchy);
+				} else {
+					updateBreadcrumbs(category, null, $navigationContext.categoryHierarchy);
+				}
+			}
+		}
+	}
+
+	/**
+	 * Find category by ID in hierarchy
+	 * @param {number} categoryId
+	 * @param {any[]} categories
+	 * @returns {any|null}
+	 */
+	function findCategoryById(categoryId, categories) {
+		for (const category of categories) {
+			if (category.id === categoryId) {
+				return category;
+			}
+			if (category.children && category.children.length > 0) {
+				const found = findCategoryById(categoryId, category.children);
+				if (found) return found;
+			}
+		}
+		return null;
+	}
+
+	/**
+	 * Handle home click - reset navigation to home state
+	 */
+	function handleHomeClick() {
+		navigationContext.update((ctx) => ({
+			...ctx,
+			breadcrumbs: [{ label: 'Home', href: '/', active: true }],
+			selectedCategory: null,
+			selectedTask: null
+		}));
 	}
 </script>
 
@@ -58,14 +136,29 @@
 					>
 						{crumb.label}
 					</span>
-				{:else}
-					<a
-						href={crumb.href}
-						class="transition-colors hover:text-gray-900 hover:underline"
+				{:else if crumb.categoryId}
+					<!-- Use button for navigation breadcrumbs -->
+					<button
+						class="transition-colors hover:text-gray-900 hover:underline text-left"
 						title={crumb.categoryId ? `Category ID: ${crumb.categoryId}` : ''}
+						on:click={() => handleBreadcrumbClick(crumb)}
 					>
 						{crumb.label}
-					</a>
+					</button>
+				{:else}
+					<!-- Handle Home and other non-category links -->
+					{#if crumb.label === 'Home'}
+						<button
+							class="transition-colors hover:text-gray-900 hover:underline text-left"
+							on:click={handleHomeClick}
+						>
+							{crumb.label}
+						</button>
+					{:else}
+						<a href={crumb.href} class="transition-colors hover:text-gray-900 hover:underline">
+							{crumb.label}
+						</a>
+					{/if}
 				{/if}
 			</li>
 

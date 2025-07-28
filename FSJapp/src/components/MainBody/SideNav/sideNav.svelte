@@ -47,6 +47,7 @@
 	$: ({ categoryHierarchy, topicsByCategory, totalCategories, totalTopics } = sideNavData);
 
 	let expandedCategories = new Set();
+	let isNavigating = false;
 
 	onMount(() => {
 		// Initialize navigation context with side nav data
@@ -66,13 +67,59 @@
 		}));
 	}
 
+	// Sync expanded categories with navigation context
+	$: if ($navigationContext?.expandedCategories) {
+		expandedCategories = $navigationContext.expandedCategories;
+	}
+
+	/**
+	 * Auto-expand parent categories when a task is selected
+	 * @param {number} categoryId
+	 */
+	function expandParentCategories(categoryId) {
+		const category = findCategoryById(categoryId, categoryHierarchy);
+		if (category) {
+			// Find and expand all parent categories
+			let currentCategory = category;
+			const categoriesToExpand = [];
+
+			while (currentCategory) {
+				categoriesToExpand.push(currentCategory.id);
+				if (currentCategory.parent_id) {
+					const parentCategory = findCategoryById(currentCategory.parent_id, categoryHierarchy);
+					if (parentCategory) {
+						currentCategory = parentCategory;
+					} else {
+						break;
+					}
+				} else {
+					break;
+				}
+			}
+
+			categoriesToExpand.forEach((id) => expandedCategories.add(id));
+			expandedCategories = expandedCategories;
+
+			// Update navigation context
+			navigationContext.update((ctx) => ({
+				...ctx,
+				expandedCategories: new Set(expandedCategories)
+			}));
+		}
+	}
+
 	/**
 	 * @param {number} categoryId
 	 */
 	function toggleCategory(categoryId) {
+		if (isNavigating) return; // Prevent multiple clicks
+
 		const category = findCategoryById(categoryId, categoryHierarchy);
 		if (category) {
-			updateBreadcrumbs(category, null, categoryHierarchy);
+			// Only update breadcrumbs if category is being expanded
+			if (!expandedCategories.has(categoryId)) {
+				updateBreadcrumbs(category, null, categoryHierarchy);
+			}
 		}
 
 		if (expandedCategories.has(categoryId)) {
@@ -81,20 +128,40 @@
 			expandedCategories.add(categoryId);
 		}
 		expandedCategories = expandedCategories;
+
+		// Update navigation context
+		navigationContext.update((ctx) => ({
+			...ctx,
+			expandedCategories: new Set(expandedCategories)
+		}));
 	}
 
 	/**
 	 * @param {{ id?: number; task_name: any; category_id?: number; task_type?: string; difficulty_level?: string; estimated_hours?: number | null; prerequisites?: string | null; status?: string; name: any; resources?: any[]; }} task
 	 */
-	function handleTaskClick(task) {
-		// Add null/undefined check before calling findCategoryById
-		if (task.category_id != null) {
+	async function handleTaskClick(task) {
+		if (isNavigating) return; // Prevent double-clicks
+
+		// Prevent navigation if no valid category
+		if (!task.category_id || !categoryHierarchy.length) {
+			console.warn('Cannot navigate: Invalid task or missing category data');
+			return;
+		}
+
+		isNavigating = true;
+		try {
 			const category = findCategoryById(task.category_id, categoryHierarchy);
 			if (category) {
+				// Auto-expand parent categories
+				expandParentCategories(task.category_id);
 				updateBreadcrumbs(category, task, categoryHierarchy);
+			} else {
+				console.warn('Category not found for task:', task.task_name || task.name);
 			}
+			console.log('Task clicked:', task.task_name || task.name);
+		} finally {
+			isNavigating = false;
 		}
-		console.log('Task clicked:', task.task_name || task.name);
 	}
 
 	/**

@@ -16,6 +16,7 @@ import { writable } from 'svelte/store';
  * @property {BreadcrumbItem[]} breadcrumbs
  * @property {any} selectedCategory
  * @property {any} selectedTask
+ * @property {Set<number>} expandedCategories
  */
 
 /** @type {import('svelte/store').Writable<NavigationContext>} */
@@ -24,7 +25,8 @@ export const navigationContext = writable({
     topicsByCategory: {},
     breadcrumbs: [{ label: 'Home', href: '/' }],
     selectedCategory: null,
-    selectedTask: null
+    selectedTask: null,
+    expandedCategories: new Set()
 });
 
 /**
