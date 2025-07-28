@@ -1,50 +1,19 @@
 <script>
-	/**
-	 * @typedef {Object} Category
-	 * @property {number} id
-	 * @property {string} name
-	 * @property {number|null} parent_id
-	 * @property {number} level
-	 * @property {string|null} description
-	 * @property {string} created_at
-	 * @property {Category[]} children
-	 */
-
-	/** @type {Category} */
 	export let category;
-	/** @type {number} */
 	export let depth = 0;
-	/** @type {Set<number>} */
 	export let expandedCategories;
-	/** @type {{[key: number]: any[]}} */
 	export let topicsByCategory;
-	/** @type {function(number): void} */
 	export let toggleCategory;
-	/** @type {function(any): void} */
 	export let handleTaskClick;
-	/** @type {function(number): string} */
-	export let getLevelIcon;
-	/** @type {function(Category): string} */
 	export let getCategoryIcon;
-	/** @type {function(number): string} */
 	export let getLevelColor;
-	/** @type {function(string): string} */
 	export let getStatusColor;
-	/** @type {function(string): string} */
 	export let getDifficultyIcon;
 
-	/**
-	 * Get dynamic indent based on depth - using CSS custom properties
-	 * @param {number} depth
-	 */
 	function getDynamicIndentPx(depth) {
-		return depth * 16; // 16px per level
+		return depth * 16;
 	}
 
-	/**
-	 * Get dynamic border style based on depth
-	 * @param {number} depth
-	 */
 	function getDynamicBorder(depth) {
 		const colors = [
 			'border-blue-100',
@@ -59,36 +28,16 @@
 		return colors[Math.min(depth, colors.length - 1)] || 'border-gray-50';
 	}
 
-	/**
-	 * Get dynamic padding based on depth
-	 * @param {number} depth
-	 */
 	function getDynamicPadding(depth) {
 		return depth === 0 ? 'p-2' : depth <= 2 ? 'p-2' : 'p-1';
 	}
 
-	/**
-	 * Get dynamic text size based on depth
-	 * @param {number} depth
-	 */
 	function getDynamicTextSize(depth) {
-		if (depth === 0) return 'text-sm';
-		if (depth <= 2) return 'text-xs';
-		return 'text-xs';
-	}
-
-	/**
-	 * Get depth indicator for visual hierarchy
-	 * @param {number} depth
-	 */
-	function getDepthIndicator(depth) {
-		const indicators = ['📁', '📂', '📄', '📋', '📝', '🔹', '▫️', '▪️'];
-		return indicators[Math.min(depth, indicators.length - 1)] || '▪️';
+		return depth === 0 ? 'text-sm' : 'text-xs';
 	}
 </script>
 
 <div class="border-l-2 {getDynamicBorder(depth)}">
-	<!-- Category Header -->
 	<button
 		class="w-full text-left {getDynamicPadding(
 			depth
@@ -111,9 +60,7 @@
 		</span>
 	</button>
 
-	<!-- Only show content when category is expanded -->
 	{#if expandedCategories.has(category.id)}
-		<!-- Tasks in Category -->
 		{#if topicsByCategory[category.id]}
 			<div class="mt-1 space-y-1" style="padding-left: {getDynamicIndentPx(depth + 1)}px">
 				{#each topicsByCategory[category.id] as task}
@@ -141,7 +88,7 @@
 								<span class="text-xs px-2 py-1 bg-gray-100 rounded text-gray-600">
 									{task.task_type}
 								</span>
-								{#if task.resources && task.resources.length > 0}
+								{#if task.resources?.length > 0}
 									<span class="text-xs text-blue-500 ml-2">
 										{task.resources.length} resource{task.resources.length !== 1 ? 's' : ''}
 									</span>
@@ -153,8 +100,7 @@
 			</div>
 		{/if}
 
-		<!-- Recursive Subcategories -->
-		{#if category.children && category.children.length > 0}
+		{#if category.children?.length > 0}
 			<div class="mt-1" style="padding-left: {getDynamicIndentPx(depth + 1)}px">
 				{#each category.children as childCategory}
 					<svelte:self
@@ -164,7 +110,6 @@
 						{topicsByCategory}
 						{toggleCategory}
 						{handleTaskClick}
-						{getLevelIcon}
 						{getCategoryIcon}
 						{getLevelColor}
 						{getStatusColor}

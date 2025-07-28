@@ -7,63 +7,46 @@
 		? $navigationContext?.topicsByCategory[selectedCategory.id] || []
 		: [];
 
-	/**
-	 * Get difficulty color
-	 * @param {string} level
-	 */
 	function getDifficultyColor(level) {
-		switch (level) {
-			case 'Beginner':
-				return 'text-green-600 bg-green-50';
-			case 'Intermediate':
-				return 'text-yellow-600 bg-yellow-50';
-			case 'Advanced':
-				return 'text-red-600 bg-red-50';
-			default:
-				return 'text-gray-600 bg-gray-50';
-		}
+		const colors = {
+			Advanced: 'text-purple-600 bg-purple-50',
+			Intermediate: 'text-orange-600 bg-orange-50',
+			Beginner: 'text-green-600 bg-green-50'
+		};
+		return colors[level] || 'text-gray-600 bg-gray-50';
 	}
 
-	/**
-	 * Get status color
-	 * @param {string} status
-	 */
+	function getDifficultyIcon(level) {
+		const icons = {
+			Advanced: '💎',
+			Intermediate: '⚡',
+			Beginner: '🌱'
+		};
+		return icons[level] || '🎯';
+	}
+
 	function getStatusColor(status) {
-		switch (status) {
-			case 'completed':
-				return 'text-green-600 bg-green-50';
-			case 'in_progress':
-				return 'text-blue-600 bg-blue-50';
-			case 'not_started':
-				return 'text-gray-600 bg-gray-50';
-			default:
-				return 'text-gray-600 bg-gray-50';
-		}
+		const colors = {
+			completed: 'text-green-600 bg-green-50',
+			in_progress: 'text-blue-600 bg-blue-50',
+			not_started: 'text-gray-600 bg-gray-50'
+		};
+		return colors[status] || 'text-gray-600 bg-gray-50';
 	}
 
-	/**
-	 * Get task type icon
-	 * @param {string} type
-	 */
 	function getTaskTypeIcon(type) {
-		switch (type) {
-			case 'Theory':
-				return '📚';
-			case 'Practical':
-				return '🔧';
-			case 'Framework':
-				return '⚡';
-			case 'Setup':
-				return '⚙️';
-			default:
-				return '📄';
-		}
+		const icons = {
+			Theory: '📚',
+			Practical: '🔧',
+			Framework: '⚡',
+			Setup: '⚙️'
+		};
+		return icons[type] || '📄';
 	}
 </script>
 
 <div class="h-full rounded-lg bg-white shadow-sm border overflow-y-auto">
 	{#if selectedTask}
-		<!-- Task Information Card -->
 		<div class="p-6">
 			<div class="mb-4">
 				<div class="flex items-center gap-2 mb-2">
@@ -84,10 +67,11 @@
 					<dt class="text-sm font-medium text-gray-500">Difficulty</dt>
 					<dd class="mt-1">
 						<span
-							class="inline-flex px-2 py-1 text-xs font-medium rounded-full {getDifficultyColor(
+							class="inline-flex items-center gap-1 px-2 py-1 text-xs font-medium rounded-full {getDifficultyColor(
 								selectedTask.difficulty_level
 							)}"
 						>
+							<span>{getDifficultyIcon(selectedTask.difficulty_level)}</span>
 							{selectedTask.difficulty_level}
 						</span>
 					</dd>
@@ -121,7 +105,7 @@
 				</div>
 			{/if}
 
-			{#if selectedTask.resources && selectedTask.resources.length > 0}
+			{#if selectedTask.resources?.length > 0}
 				<div class="mt-6">
 					<h3 class="text-sm font-medium text-gray-500 mb-3">
 						Resources ({selectedTask.resources.length})
@@ -149,7 +133,6 @@
 			{/if}
 		</div>
 	{:else if selectedCategory}
-		<!-- Category Information Card -->
 		<div class="p-6">
 			<div class="mb-4">
 				<div class="flex items-center gap-2 mb-2">
@@ -179,7 +162,7 @@
 				<div>
 					<dt class="text-sm font-medium text-gray-500">Sub-categories</dt>
 					<dd class="mt-1 text-sm text-gray-900">
-						{selectedCategory.children ? selectedCategory.children.length : 0} sub-categories
+						{selectedCategory.children?.length || 0} sub-categories
 					</dd>
 				</div>
 			</dl>
@@ -201,14 +184,17 @@
 							<div class="flex items-center justify-between p-2 bg-gray-50 rounded-lg">
 								<div class="flex items-center gap-2">
 									<span>{getTaskTypeIcon(task.task_type)}</span>
-									<span class="text-sm font-medium text-gray-900"
-										>{task.task_name || task.name}</span
-									>
+									<span class="text-sm font-medium text-gray-900">
+										{task.task_name || task.name}
+									</span>
 								</div>
 								<div class="flex items-center gap-2">
 									<span
-										class="text-xs {getDifficultyColor(task.difficulty_level)} px-2 py-1 rounded"
+										class="inline-flex items-center gap-1 text-xs {getDifficultyColor(
+											task.difficulty_level
+										)} px-2 py-1 rounded"
 									>
+										<span>{getDifficultyIcon(task.difficulty_level)}</span>
 										{task.difficulty_level}
 									</span>
 									{#if task.estimated_hours}
@@ -222,7 +208,6 @@
 			{/if}
 		</div>
 	{:else}
-		<!-- Default/Welcome Card -->
 		<div class="p-6 flex flex-col items-center justify-center h-full text-center">
 			<div class="mb-4">
 				<span class="text-6xl">🗺️</span>

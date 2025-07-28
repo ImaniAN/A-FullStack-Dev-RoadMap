@@ -24,7 +24,5 @@
 		<InfoCard />
 		<DataLegend />
 	</div>
-
-	<!-- Footer Component -->
 	<Footer />
 </div>

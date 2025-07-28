@@ -1,87 +1,42 @@
-<script lang="ts">
-	import { page } from '$app/stores';
+<script>
 	import { navigationContext, updateBreadcrumbs } from '$lib/stores/breadcrumbStore.js';
 
-	// Breadcrumb item type
-	interface BreadcrumbItem {
-		label: string;
-		href: string;
-		active?: boolean;
-		categoryId?: number;
-		taskId?: number;
-	}
+	let breadcrumbs = [];
 
-	let breadcrumbs: BreadcrumbItem[] = [];
-
-	// React to navigation context changes
 	$: if ($navigationContext?.breadcrumbs) {
 		breadcrumbs = $navigationContext.breadcrumbs;
 	} else {
-		// Default fallback breadcrumbs
 		breadcrumbs = [{ label: 'Home', href: '/', active: true }];
 	}
 
-	// Generate breadcrumbs from current route (kept for potential future use)
-	function generateBreadcrumbs(currentPath: string): BreadcrumbItem[] {
-		const segments = currentPath.split('/').filter(Boolean);
-		const items: BreadcrumbItem[] = [{ label: 'Home', href: '/' }];
-
-		let path = '';
-		segments.forEach((segment, index) => {
-			path += `/${segment}`;
-			const isLast = index === segments.length - 1;
-
-			items.push({
-				label: segment.charAt(0).toUpperCase() + segment.slice(1),
-				href: path,
-				active: isLast
-			});
-		});
-
-		return items;
-	}
-
-	/**
-	 * Collapse all categories except the path to the selected item (same as sideNav)
-	 * @param {number} categoryId
-	 * @param {any[]} categoryHierarchy
-	 */
-	function collapseToCategory(categoryId: number, categoryHierarchy: any[]) {
+	function collapseToCategory(categoryId, categoryHierarchy) {
 		const category = findCategoryById(categoryId, categoryHierarchy);
-		if (category) {
-			// Get all parent categories in the path
-			let currentCategory = category;
-			const pathCategories: number[] = [];
+		if (!category) return;
 
-			while (currentCategory) {
-				pathCategories.push(currentCategory.id);
-				if (currentCategory.parent_id) {
-					currentCategory = findCategoryById(currentCategory.parent_id, categoryHierarchy);
-				} else {
-					break;
-				}
+		let currentCategory = category;
+		const pathCategories = [];
+
+		while (currentCategory) {
+			pathCategories.push(currentCategory.id);
+			if (currentCategory.parent_id) {
+				currentCategory = findCategoryById(currentCategory.parent_id, categoryHierarchy);
+			} else {
+				break;
 			}
-
-			// Update the navigation context with collapsed state (only path categories expanded)
-			navigationContext.update((ctx) => ({
-				...ctx,
-				expandedCategories: new Set(pathCategories)
-			}));
 		}
+
+		navigationContext.update((ctx) => ({
+			...ctx,
+			expandedCategories: new Set(pathCategories)
+		}));
 	}
 
-	/**
-	 * Handle breadcrumb click - navigate using the same collapse system as sideNav
-	 * @param {BreadcrumbItem} crumb
-	 */
-	function handleBreadcrumbClick(crumb: BreadcrumbItem) {
+	function handleBreadcrumbClick(crumb) {
 		if (crumb.categoryId && $navigationContext?.categoryHierarchy) {
 			const category = findCategoryById(crumb.categoryId, $navigationContext.categoryHierarchy);
 			if (category) {
-				// Collapse navigation to show only the clicked category's path
 				collapseToCategory(crumb.categoryId, $navigationContext.categoryHierarchy);
 
-				// If it's a task breadcrumb, find the task too
 				if (crumb.taskId) {
 					const tasks = $navigationContext.topicsByCategory[crumb.categoryId] || [];
 					const task = tasks.find((t) => t.id === crumb.taskId);
@@ -93,35 +48,24 @@
 		}
 	}
 
-	/**
-	 * Find category by ID in hierarchy
-	 * @param {number} categoryId
-	 * @param {any[]} categories
-	 * @returns {any|null}
-	 */
-	function findCategoryById(categoryId: number, categories: any[]): any | null {
+	function findCategoryById(categoryId, categories) {
 		for (const category of categories) {
-			if (category.id === categoryId) {
-				return category;
-			}
-			if (category.children && category.children.length > 0) {
-				const found: any = findCategoryById(categoryId, category.children);
+			if (category.id === categoryId) return category;
+			if (category.children?.length > 0) {
+				const found = findCategoryById(categoryId, category.children);
 				if (found) return found;
 			}
 		}
 		return null;
 	}
 
-	/**
-	 * Handle home click - reset navigation to home state
-	 */
 	function handleHomeClick() {
 		navigationContext.update((ctx) => ({
 			...ctx,
 			breadcrumbs: [{ label: 'Home', href: '/', active: true }],
 			selectedCategory: null,
 			selectedTask: null,
-			expandedCategories: new Set() // Clear all expanded categories
+			expandedCategories: new Set()
 		}));
 	}
 </script>
@@ -138,7 +82,6 @@
 						{crumb.label}
 					</span>
 				{:else if crumb.categoryId}
-					<!-- Use button for navigation breadcrumbs -->
 					<button
 						class="transition-colors hover:text-gray-900 hover:underline text-left"
 						title={crumb.categoryId ? `Category ID: ${crumb.categoryId}` : ''}
@@ -146,24 +89,20 @@
 					>
 						{crumb.label}
 					</button>
+				{:else if crumb.label === 'Home'}
+					<button
+						class="transition-colors hover:text-gray-900 hover:underline text-left"
+						on:click={handleHomeClick}
+					>
+						{crumb.label}
+					</button>
 				{:else}
-					<!-- Handle Home and other non-category links -->
-					{#if crumb.label === 'Home'}
-						<button
-							class="transition-colors hover:text-gray-900 hover:underline text-left"
-							on:click={handleHomeClick}
-						>
-							{crumb.label}
-						</button>
-					{:else}
-						<a href={crumb.href} class="transition-colors hover:text-gray-900 hover:underline">
-							{crumb.label}
-						</a>
-					{/if}
+					<a href={crumb.href} class="transition-colors hover:text-gray-900 hover:underline">
+						{crumb.label}
+					</a>
 				{/if}
 			</li>
 
-			<!-- Separator (don't show after last item) -->
 			{#if index < breadcrumbs.length - 1}
 				<li class="rtl:rotate-180 mx-1">
 					<svg
