@@ -42,19 +42,19 @@
 	}
 
 	/**
-	 * Auto-expand parent categories when navigating via breadcrumb
+	 * Collapse all categories except the path to the selected item (same as sideNav)
 	 * @param {number} categoryId
 	 * @param {any[]} categoryHierarchy
 	 */
-	function expandParentCategories(categoryId: number, categoryHierarchy: any[]) {
+	function collapseToCategory(categoryId: number, categoryHierarchy: any[]) {
 		const category = findCategoryById(categoryId, categoryHierarchy);
 		if (category) {
-			// Find and expand all parent categories
+			// Get all parent categories in the path
 			let currentCategory = category;
-			const categoriesToExpand: number[] = [];
+			const pathCategories: number[] = [];
 
 			while (currentCategory) {
-				categoriesToExpand.push(currentCategory.id);
+				pathCategories.push(currentCategory.id);
 				if (currentCategory.parent_id) {
 					currentCategory = findCategoryById(currentCategory.parent_id, categoryHierarchy);
 				} else {
@@ -62,24 +62,24 @@
 				}
 			}
 
-			// Update the navigation context with expanded categories
+			// Update the navigation context with collapsed state (only path categories expanded)
 			navigationContext.update((ctx) => ({
 				...ctx,
-				expandedCategories: new Set([...ctx.expandedCategories, ...categoriesToExpand])
+				expandedCategories: new Set(pathCategories)
 			}));
 		}
 	}
 
 	/**
-	 * Handle breadcrumb click - navigate using the same system as sideNav
+	 * Handle breadcrumb click - navigate using the same collapse system as sideNav
 	 * @param {BreadcrumbItem} crumb
 	 */
 	function handleBreadcrumbClick(crumb: BreadcrumbItem) {
 		if (crumb.categoryId && $navigationContext?.categoryHierarchy) {
 			const category = findCategoryById(crumb.categoryId, $navigationContext.categoryHierarchy);
 			if (category) {
-				// Auto-expand the clicked category and its parents
-				expandParentCategories(crumb.categoryId, $navigationContext.categoryHierarchy);
+				// Collapse navigation to show only the clicked category's path
+				collapseToCategory(crumb.categoryId, $navigationContext.categoryHierarchy);
 
 				// If it's a task breadcrumb, find the task too
 				if (crumb.taskId) {
@@ -120,7 +120,8 @@
 			...ctx,
 			breadcrumbs: [{ label: 'Home', href: '/', active: true }],
 			selectedCategory: null,
-			selectedTask: null
+			selectedTask: null,
+			expandedCategories: new Set() // Clear all expanded categories
 		}));
 	}
 </script>

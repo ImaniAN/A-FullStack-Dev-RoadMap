@@ -110,6 +110,47 @@
 	}
 
 	/**
+	 * Collapse all categories except the path to the selected item
+	 * @param {number} categoryId
+	 */
+	function collapseToCategory(categoryId) {
+		// Clear all expanded categories first
+		expandedCategories.clear();
+
+		// Find the path to the selected category
+		const category = findCategoryById(categoryId, categoryHierarchy);
+		if (category) {
+			// Get all parent categories in the path
+			let currentCategory = category;
+			const pathCategories = [];
+
+			while (currentCategory) {
+				pathCategories.push(currentCategory.id);
+				if (currentCategory.parent_id) {
+					const parentCategory = findCategoryById(currentCategory.parent_id, categoryHierarchy);
+					if (parentCategory) {
+						currentCategory = parentCategory;
+					} else {
+						break;
+					}
+				} else {
+					break;
+				}
+			}
+
+			// Expand only the path categories
+			pathCategories.forEach((id) => expandedCategories.add(id));
+			expandedCategories = expandedCategories;
+
+			// Update navigation context
+			navigationContext.update((ctx) => ({
+				...ctx,
+				expandedCategories: new Set(expandedCategories)
+			}));
+		}
+	}
+
+	/**
 	 * @param {number} categoryId
 	 */
 	function toggleCategory(categoryId) {
@@ -117,24 +158,10 @@
 
 		const category = findCategoryById(categoryId, categoryHierarchy);
 		if (category) {
-			// Only update breadcrumbs if category is being expanded
-			if (!expandedCategories.has(categoryId)) {
-				updateBreadcrumbs(category, categoryHierarchy, null);
-			}
+			// Collapse to show only this category's path and update breadcrumbs
+			collapseToCategory(categoryId);
+			updateBreadcrumbs(category, categoryHierarchy, null);
 		}
-
-		if (expandedCategories.has(categoryId)) {
-			expandedCategories.delete(categoryId);
-		} else {
-			expandedCategories.add(categoryId);
-		}
-		expandedCategories = expandedCategories;
-
-		// Update navigation context
-		navigationContext.update((ctx) => ({
-			...ctx,
-			expandedCategories: new Set(expandedCategories)
-		}));
 	}
 
 	/**
@@ -153,8 +180,8 @@
 		try {
 			const category = findCategoryById(task.category_id, categoryHierarchy);
 			if (category) {
-				// Auto-expand parent categories
-				expandParentCategories(task.category_id);
+				// Collapse navigation to show only the path to this task's category
+				collapseToCategory(task.category_id);
 				updateBreadcrumbs(category, categoryHierarchy, task);
 			} else {
 				console.warn('Category not found for task:', task.task_name || task.name);
@@ -314,7 +341,7 @@
 	}
 </script>
 
-<div class="h-full col-span-2 rounded-lg bg-white shadow-sm border overflow-y-auto">
+<div class="h-full col-span-2 rounded-lg bg-white shadow-sm border overflow-y-auto scrollbar-hide">
 	<div class="p-4">
 		<!-- Header -->
 		<div class="mb-4 pb-3 border-b border-gray-200">
@@ -343,3 +370,16 @@
 		</div>
 	</div>
 </div>
+
+<style>
+	/* Hide scrollbar for Chrome, Safari and Opera */
+	.scrollbar-hide::-webkit-scrollbar {
+		display: none;
+	}
+
+	/* Hide scrollbar for IE, Edge and Firefox */
+	.scrollbar-hide {
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+	}
+</style>
