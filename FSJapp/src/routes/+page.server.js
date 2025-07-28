@@ -1,5 +1,5 @@
 import { supabase } from "$lib/supabaseClient";
-import { loadSideNavData } from "../components/MainBody/SideNav/+sideNav.server.js";
+import { loadSideNavData } from "../components/Navigation/SideNav/+sideNav.server.js";
 
 export async function load() {
   // Load existing roadmap tasks

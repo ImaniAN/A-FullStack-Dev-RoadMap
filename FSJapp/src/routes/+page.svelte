@@ -1,10 +1,10 @@
 <script>
-	import DataLegend from '../components/MainBody/DataLegend/dataLegend.svelte';
-	import NavInfoCard from '../components/MainBody/NavInfoCard/navInfoCard.svelte';
-	import SideNav from '../components/MainBody/SideNav/sideNav.svelte';
-	import ProgressBar from '../components/Misc/progressBar.svelte';
-	import TitleHeader from '../components/TopNav/HeaderTitle/titleHeader.svelte';
-	import Footer from '../components/Footer/footer.svelte';
+	import DataLegend from '../components/UI/DataLegend/dataLegend.svelte';
+	import InfoCard from '../components/UI/InfoCard/navInfoCard.svelte';
+	import SideNav from '../components/Navigation/SideNav/sideNav.svelte';
+	import ProgressBar from '../components/UI/ProgressBar.svelte';
+	import TitleHeader from '../components/Layout/Header/titleHeader.svelte';
+	import Footer from '../components/Layout/Footer/footer.svelte';
 
 	export let data;
 </script>
@@ -21,7 +21,7 @@
 
 	<div class="grid grid-cols-4 gap-2 p-2 h-[80vh]">
 		<SideNav sideNavData={data.sideNavData} />
-		<NavInfoCard />
+		<InfoCard />
 		<DataLegend />
 	</div>
 
