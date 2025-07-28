@@ -14,13 +14,17 @@ import { writable } from 'svelte/store';
  * @property {any[]} categoryHierarchy
  * @property {Record<number, any[]>} topicsByCategory
  * @property {BreadcrumbItem[]} breadcrumbs
+ * @property {any} selectedCategory
+ * @property {any} selectedTask
  */
 
 /** @type {import('svelte/store').Writable<NavigationContext>} */
 export const navigationContext = writable({
     categoryHierarchy: [],
     topicsByCategory: {},
-    breadcrumbs: [{ label: 'Home', href: '/' }]
+    breadcrumbs: [{ label: 'Home', href: '/' }],
+    selectedCategory: null,
+    selectedTask: null
 });
 
 /**
@@ -58,7 +62,9 @@ export function updateBreadcrumbs(category, task, categoryHierarchy) {
 
     navigationContext.update(ctx => ({
         ...ctx,
-        breadcrumbs
+        breadcrumbs,
+        selectedCategory: category,
+        selectedTask: task || null
     }));
 }
 

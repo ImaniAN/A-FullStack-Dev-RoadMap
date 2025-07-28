@@ -87,9 +87,12 @@
 	 * @param {{ id?: number; task_name: any; category_id?: number; task_type?: string; difficulty_level?: string; estimated_hours?: number | null; prerequisites?: string | null; status?: string; name: any; resources?: any[]; }} task
 	 */
 	function handleTaskClick(task) {
-		const category = findCategoryById(task.category_id, categoryHierarchy);
-		if (category && task.category_id) {
-			updateBreadcrumbs(category, task, categoryHierarchy);
+		// Add null/undefined check before calling findCategoryById
+		if (task.category_id != null) {
+			const category = findCategoryById(task.category_id, categoryHierarchy);
+			if (category) {
+				updateBreadcrumbs(category, task, categoryHierarchy);
+			}
 		}
 		console.log('Task clicked:', task.task_name || task.name);
 	}
