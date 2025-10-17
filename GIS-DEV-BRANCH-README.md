@@ -13,7 +13,7 @@ This PR creates a new local branch called `GIS-dev` in the repository.
 ✅ Branch created successfully in local repository
 
 ## What Was Done
-1. Created a new local branch named `GIS-dev` from the `copilot/create-gis-dev-branch` branch
+1. Created a new local branch named `GIS-dev` from commit `908c6c8` (which is part of the `copilot/create-gis-dev-branch` branch history)
 2. The branch points to commit `908c6c8` which contains the initial plan
 3. Documented the branch creation for future reference
 
