@@ -1,5 +1,5 @@
-import { supabase } from "$lib/supabaseClient.js";
-import { DIFFICULTY_SYSTEM, getTierName } from "../../UI/InfoCard/utils/difficultySystem.js";
+import { supabase } from "../../lib/supabaseClient.js";
+import { DIFFICULTY_SYSTEM, getTierName } from "../../../UI/InfoCard/utils/difficultySystem.js";
 
 export async function loadSideNavData() {
 	const [categoriesResult, tasksResult, resourcesResult] = await Promise.all([

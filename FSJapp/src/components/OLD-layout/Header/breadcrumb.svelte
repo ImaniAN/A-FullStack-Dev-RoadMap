@@ -1,5 +1,5 @@
 <script>
-	import { navigationContext, updateBreadcrumbs } from '$lib/stores/breadcrumbStore.js';
+	import { navigationContext, updateBreadcrumbs } from '../lib/stores/breadcrumbStore.js';
 
 	let breadcrumbs = [];
 

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { navigationContext, cumulativeCounts } from '$lib/stores/breadcrumbStore.js';
+	import { navigationContext, cumulativeCounts } from '../../../lib/stores/breadcrumbStore.js';
 	import { getCategoryTierInfo } from '../utils/difficultySystem.js';
 
 	export let category: any;

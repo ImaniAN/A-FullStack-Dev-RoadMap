@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { navigationContext, updateBreadcrumbs } from '$lib/stores/breadcrumbStore.js';
+	import { navigationContext, updateBreadcrumbs } from '../../lib/stores/breadcrumbStore.js';
 	import { onMount } from 'svelte';
 	import CategoryNode from './CategoryNode.svelte';
 

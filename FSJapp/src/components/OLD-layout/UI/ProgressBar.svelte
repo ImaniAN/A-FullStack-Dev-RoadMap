@@ -1,5 +1,5 @@
 <script>
-	import { navigationContext } from '$lib/stores/breadcrumbStore.js';
+	import { navigationContext } from '../lib/stores/breadcrumbStore.js';
 
 	export let label = 'Roadmap Progress';
 	export let showPercentage = true;

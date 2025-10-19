@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { navigationContext, cumulativeCounts } from '$lib/stores/breadcrumbStore.js';
+	import { navigationContext, cumulativeCounts } from '../../lib/stores/breadcrumbStore.js';
 	import { onMount } from 'svelte';
 
 	// Static imports with fallback handling

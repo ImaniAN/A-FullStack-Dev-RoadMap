@@ -1,5 +1,5 @@
 <script>
-	import { navigationContext } from '$lib/stores/breadcrumbStore.js';
+	import { navigationContext } from '../../lib/stores/breadcrumbStore.js';
 	import LegendHeader from './components/LegendHeader.svelte';
 	import CategoryLevels from './components/CategoryLevels.svelte';
 	import TaskTypes from './components/TaskTypes.svelte';
